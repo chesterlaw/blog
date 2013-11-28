@@ -1,10 +1,9 @@
 Blog::Application.routes.draw do
   get "index/index"
-  get "w/twitter"
-  get "w/instagram"
   root 'index#index'
 
   get "w", to: "w#index"
+  get "w/a-fighters", to: "w#afighters", as: "afighters"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
