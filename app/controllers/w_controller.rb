@@ -8,6 +8,6 @@ class WController < ApplicationController
   def afighters
     @chinese_title = ['甲', '級', '爭', '取', '者', '。']
 
-    render :layout => 'w'
+    render :layout => 'afighters'
   end
 end

@@ -1,0 +1,93 @@
+@import "style.css";
+@import "template.css.scss";
+@import "index.css.scss";
+
+$red: #EB190A;
+
+html {
+  font-family: "Helvetica Neue";
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: #F7F7F7;
+}
+
+a.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  font-weight: 800;
+  color: black;
+  &:hover { color: $red; }
+
+}
+
+.tankobon {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 752px;
+  position: relative;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    &:last-child {margin-bottom: 2em;}
+  }
+}
+
+.cover {
+  h2 {
+    font-weight: 700;
+    font-size: 10.15em;
+    line-height: 1;
+    text-align: center;
+    margin-top: 0.1em;
+    display: block;
+    font-family: Impact;
+  }
+
+  p {
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 0.5em 3em;
+  }
+}
+  
+.red_tab {
+  background: $red;
+  padding: 1.3em 0 1em;
+  margin-top: 3em;
+
+  h2 {
+    font-size: 9.4em;
+    font-weight: 800;
+    font-family: "Hiragino Sans GB", "STHeiti", sans-serif;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 2em;
+    font-family: "Hiragino Sans GB", "STHeiti", sans-serif;
+    margin-top: 0.3em;
+    font-weight: 700;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
