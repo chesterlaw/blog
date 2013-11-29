@@ -97,7 +97,7 @@ body {
 
 .more {
   position: absolute;
-  right: 1.7em;
+  right: -2.4em;
   top: 43%;
   -webkit-transform:rotate(-90deg);
   -moz-transform:rotate(-90deg);
@@ -121,35 +121,6 @@ body {
     -moz-transform:rotate(90deg);
     -ms-transform:rotate(90deg);
     -o-transform:rotate(90deg);
-  }
-}
-
-.back {
-  position: absolute;
-  left: 1.7em;
-  top: 43%;
-  -webkit-transform:rotate(-90deg);
-  -moz-transform:rotate(-90deg);
-  -ms-transform:rotate(-90deg);
-  -o-transform:rotate(-90deg);
-
-  a {
-    color: $white;
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 2em;
-    text-decoration: none;
-  }
-
-  p {
-    color: $white;
-    position: absolute;
-    top: -1.3em;
-    right: 45%;
-    -webkit-transform:rotate(30deg);
-    -moz-transform:rotate(30deg);
-    -ms-transform:rotate(30deg);
-    -o-transform:rotate(30deg);
   }
 }
 
