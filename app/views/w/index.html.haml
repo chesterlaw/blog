@@ -1,3 +1,13 @@
+.wrapper 
+  .chinese_title
+    - @chinese_title.each do |character|
+      %h1= character
+
+  .english_title
+    %a{href: "/w"}
+      %h1 Chester Law's
+      %h1 Website
+
 .content
   %p
     %span.h2 This is Chester Law's Website.
@@ -6,3 +16,6 @@
 .more
   %a= link_to "A-FIGHTERS", afighters_path
   %p &#9654;
+
+%footer
+  %p &copy; 2013 Chester Law
