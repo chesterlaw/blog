@@ -16,13 +16,17 @@ html {
 
 body {
   height: 100%;
+  min-width: 1300px;
+  position: relative;
 }
 
 .wrapper {
   margin: 0 auto;
   height: 100%;
-  min-width: 840px;
   position: relative;
+  width: 1000px;
+  min-width: 1000px;
+  display: block;
 }
 
 .chinese_title {
@@ -64,11 +68,10 @@ body {
 }
 
 .content {
-  width: 80%;
   position: absolute;
-  right: 0;
+  left: 13em;
   top: 9em;
-  padding-right: 15em;
+  width: 700px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 
@@ -136,18 +139,3 @@ footer {
     color: #D47023;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
