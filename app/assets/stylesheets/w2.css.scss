@@ -1,45 +1,86 @@
 .w2.page-section-wrapper {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  
-  .page-section {
+
+  section {
     width: 800px;
     margin: 0 auto;
+  }
+  
+  section.title {
 
-    .title-section {
-      border-bottom: 1px solid red;
-
-      h1 {
-        font-weight: 500;
-        text-align: center;
-        width: 50%;
-        margin: 0.6em auto;
-
-        a {
-          color: #07CEFF;
-        }
-      }
-    }
-
-    .nav-section {
-      overflow: hidden;
+    h1 {
+      font-weight: 500;
+      text-align: center;
+      width: 40%;
+      margin: 0.6em auto;
 
       a {
-        font-size: 1.3em;
-        font-weight: 500;
-        float: left;
-        width: 25%;
-        text-align: center;
-        padding-top: 0.32em;
+        color: #07CEFF;
       }
     }
+  }
 
-    .content-section {
+  section.nav {
+    overflow: hidden;
+    width: 100%;
+    border-top: 2px solid #FFE852;
+    padding: 0.3em 0;
 
-      h2 {
-        font-weight: 500;
-        font-size: 2em;
-        background: yellow;
-        margin-top: 0.5em;
+    a {
+      font-size: 1.3em;
+      font-weight: 500;
+      float: left;
+      width: 25%;
+      text-align: center;
+      padding-top: 0.32em;
+      color: #666;
+    }
+  }
+
+  section.content {
+
+    h2 {
+      font-weight: 600;
+      font-size: 2.8em;
+      margin-top: 0.5em;
+      padding-left: 0.5em;
+    }
+
+    .bio {
+      padding: 1.5em 0 4em;
+      overflow: hidden;
+
+      .figure {
+        float: left;
+        width: 35%;
+        padding-left: 4em;
+        padding-top: 4em;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .bubble {
+        float: left;
+        width: 65%;
+        padding-right: 8em;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .text {
+        float: left;
+        width: 65%;
+        margin-top: 1.5em;
+
+        p {
+          border-left: 5px solid #07CEFF;
+          margin-left: 2em;
+          padding: 0.25em 5em 5em 0.8em;
+        }
       }
     }
   }
