@@ -1,0 +1,40 @@
+- browserClasses = "no-js"
+- if browser.mac? && browser.chrome?
+  -
+- if browser.mac? && browser.opera?
+  - browserClasses << " macOpera"
+- if browser.mac? && browser.firefox?
+  - browserClasses << " macFirefox"
+- if browser.mac? && browser.safari?
+  - browserClasses << " macSafari"
+- if browser.windows? && browser.opera?
+  - browserClasses << " windowsOpera"
+- if browser.windows? && browser.chrome?
+  - browserClasses << " windowsChrome"
+- if browser.windows? && browser.safari?
+  - browserClasses << " windowsSafari"
+- if browser.windows? && browser.firefox?
+  - browserClasses << " windowsFirefox"
+- if browser.mobile?
+  - browserClasses << " mobile"
+
+!!! 5
+%html{class: browserClasses}
+  %head
+    %meta{charset:"utf-8"}
+    %meta{:'http-equiv' => "X-UA-Compatible", content:"IE=edge"}
+    %meta{name:"description", content:"Chester Law's Website"}
+    %meta{name:"viewport", content:"initial-scale = 1.0,maximum-scale = 1.0"}
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+    = csrf_meta_tags
+
+    %title= (!@html_title && "Chester Law") || (@html_title)
+
+  %body
+    <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+    = yield
+
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+
+    -# google analytics

@@ -1,4 +1,4 @@
-Blog::Application.configure do
+MyBlog::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -28,7 +28,7 @@ Blog::Application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
-  config.assets.precompile << %w(afighters.js afighters.css w.js w.css)
+  config.assets.precompile << %w(application.css)
 
   # Generate digests for assets URLs.
   config.assets.digest = true

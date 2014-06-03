@@ -27,6 +27,7 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.1)
     atomic (1.1.14)
+    browser (0.5.0)
     builder (3.1.4)
     capistrano (3.0.1)
       i18n
@@ -82,6 +83,8 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    rename (1.0.2)
+      rails (>= 3.0.0)
     sass (3.2.12)
     sass-rails (4.0.1)
       railties (>= 4.0.0, < 5.0)
@@ -125,6 +128,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  browser
   capistrano
   coffee-rails (~> 4.0.0)
   haml
@@ -132,6 +136,7 @@ DEPENDENCIES
   jquery-rails
   newrelic_rpm
   rails (= 4.0.1)
+  rename
   sass-rails (~> 4.0.0)
   sdoc
   sqlite3
