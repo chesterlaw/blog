@@ -13,7 +13,10 @@
         text-align: center;
         width: 50%;
         margin: 0.6em auto;
-        color: darken(#54DDFF, 15%);
+
+        a {
+          color: #07CEFF;
+        }
       }
     }
 
