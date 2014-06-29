@@ -1,0 +1,51 @@
+.w3 {
+  $main: lighten(#B90000, 6%);
+  $helvetica-neue-condensed-bold: "HelveticaNeue-CondensedBold", "Helvetica Neue", Helvetica, Arial;
+  
+  background: lighten(#E2DEFF, 4%);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  .page-section {
+    max-width: 700px;
+    width: 95%;
+    margin: 0 auto;
+
+    .title-section {
+      position: relative;
+      margin-left: 0.1em;
+      height: 200px; /* needs some height */
+
+      h1 {
+        color: $main;
+        font-size: 6em;
+        position: absolute;
+        bottom: 0;
+        -webkit-text-stroke: 3px black;
+        line-height: 0.7;
+
+        &::after { 
+          content: "Chester Law";
+          position: absolute;
+          left: 0;
+          -webkit-text-stroke: 0;
+          z-index: 2;
+        }
+      }
+    }
+
+    .content-section {
+      background: $main;
+      padding: 1em 1em 2.8em;
+      border-radius: 3px;
+      border: 1px solid black;
+      position: relative;
+      z-index: 1;
+
+      p {
+        font-size: 1.2em;
+        color: lighten(#FFCA1C, 10%);
+        font-weight: 300;
+      }
+    }
+  }  
+}

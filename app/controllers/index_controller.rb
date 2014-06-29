@@ -7,7 +7,9 @@ class IndexController < ApplicationController
   end
 
   def w2
-    
+  end
+
+  def w3
   end
 
   def afighters
