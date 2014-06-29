@@ -15,8 +15,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 
-gem 'bower-rails'
-
 group :doc do
   gem 'sdoc', require: false
 end
