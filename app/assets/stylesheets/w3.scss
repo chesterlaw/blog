@@ -5,10 +5,14 @@
   background: lighten(#E2DEFF, 4%);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+  body {
+    min-width: 900px;
+  }
+
   .page-section {
-    max-width: 700px;
-    width: 95%;
+    width: 700px;
     margin: 0 auto;
+    padding-bottom: 7em;
 
     .title-section {
       position: relative;
@@ -22,13 +26,6 @@
         bottom: 0;
         -webkit-text-stroke: 3px black;
         line-height: 0.7;
-        @media only screen and (max-width: 659px) {font-size: 5em;}
-        @media only screen and (max-width: 559px) {font-size: 4em;}
-        @media only screen and (max-width: 459px) {
-          -webkit-text-stroke: 2px black;
-          font-size: 3em;
-        }
-        @media only screen and (max-width: 359px) {font-size: 2em;}
 
         &::after { 
           content: "Chester Law";
