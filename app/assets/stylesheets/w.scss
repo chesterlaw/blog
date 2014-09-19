@@ -2,13 +2,16 @@
   $white: #FAFAFA;
   $orange: #DF833C;
 
-  background: url(image_path("1.jpg")) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  min-width: 1024px;
-  overflow: hidden;
+  body {
+    min-width: 1800px;
+    background: url(image_path("1.jpg")) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  min-width: 1024px;
+    overflow: hidden;    
+  }
 
   .page-section {
     float: right;
@@ -55,7 +58,7 @@
 
     .content {
       position: absolute;
-      left: 18%;
+      left: 18.5%;
       top: 9.7em;
       width: 750px;
 
@@ -70,6 +73,7 @@
         display: block;
         font-weight: 500;
         margin-bottom: 1em;
+        color: #333;
       }
 
       img {
@@ -102,7 +106,7 @@
         color: $white;
         position: absolute;
         top: 2.9em;
-        right: 50%;
+        right: 45%;
         -webkit-transform:rotate(90deg);
         -moz-transform:rotate(90deg);
         -ms-transform:rotate(90deg);
@@ -118,7 +122,7 @@
       p {
         font-weight: 900;
         margin-bottom: 1em;
-        margin-right: 2em;
+        margin-right: 1.5em;
         color: $orange;
       }
     }
