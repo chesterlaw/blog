@@ -53,3 +53,12 @@ textarea {
   -ms-transform:rotate($degrees);
   -webkit-transform:rotate($degrees);
 }
+
+@mixin background-gradient($from, $to, $distance) {
+  background-color: $from;
+  background-image: -moz-linear-gradient( left, $from, $to $distance);
+  background-image: -webkit-linear-gradient( left, $from, $to $distance);
+  background-image: -o-linear-gradient( left, $from, $to $distance);
+  background-image: -ms-linear-gradient( left, $from, $to $distance);
+  background-image: linear-gradient( left, $from, $to $distance)
+}
