@@ -15,6 +15,9 @@ class IndexController < ApplicationController
   def w4
   end
 
+  def w5
+  end
+
   def afighters
   end
 
