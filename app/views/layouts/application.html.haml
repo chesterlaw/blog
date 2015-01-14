@@ -1,5 +1,5 @@
 !!! 5
-%html.no-js{class: @html_class}
+%html
   %head
     %meta{charset:"utf-8"}
     %meta{:'http-equiv' => "X-UA-Compatible", content:"IE=edge"}
@@ -9,7 +9,7 @@
     = csrf_meta_tags
     %title= (!@html_title && "Chester Law") || (@html_title)
 
-  %body
+  %body{class: @body_classes}
     <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
     = yield
