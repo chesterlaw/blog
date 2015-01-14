@@ -1,0 +1,39 @@
+body.w6 {
+  $red: #C80000;
+  background: #111;
+  height: 100%;
+  padding: 1em;
+
+  .title-bar {
+    float: left;
+    border-left: 2px solid $red;
+    padding-left: 0.65em;
+    height: 100%;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+      color: $red;
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    p {
+      color: $red;
+      font-size: 0.8rem;
+    }
+  }
+
+  .page-section {
+    float: left;
+    width: calc(100% - 150px);
+    padding-left: 2em;
+    padding-top: 1.5em;
+
+    p {
+      color: $red;
+    }
+  }
+}

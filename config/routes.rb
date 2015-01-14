@@ -6,6 +6,7 @@ MyBlog::Application.routes.draw do
   get "w/3", to: "index#w3", as: "w3"
   get "w/4", to: "index#w4", as: "w4"
   get "w/5", to: "index#w5", as: "w5"
+  get "w/6", to: "index#w6", as: "w6"
 
   get "w/a-fighters", to: "index#afighters", as: "afighters"
 
