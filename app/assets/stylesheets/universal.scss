@@ -1,6 +1,6 @@
 *, input { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
 
-.border-box, div, form, p, a, footer, input, textarea, label {
+body, .border-box, div, form, p, a, footer, input, textarea, label {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
