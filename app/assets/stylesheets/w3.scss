@@ -1,7 +1,6 @@
 body.w3 {
   $main: #D80000;
   $helvetica-neue-condensed-bold: "HelveticaNeue-CondensedBold", "Helvetica Neue", Helvetica, Arial;
-  
   background: lighten(#E2DEFF, 3.8%);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -12,20 +11,19 @@ body.w3 {
   .page-section {
     width: 700px;
     margin: 0 auto;
-    padding-bottom: 7em;
+    padding: 7em 0;
 
     .title-section {
       position: relative;
       margin-left: 0.1em;
-      height: 200px; /* needs some height */
 
       h1 {
         color: $main;
         font-size: 6em;
-        position: absolute;
-        bottom: 0;
         -webkit-text-stroke: 3px black;
-        line-height: 0.7;
+        line-height: 1; //magic number
+        position: relative;
+        top: 0.16em; //magic number
 
         &::after { 
           content: "Chester Law";
