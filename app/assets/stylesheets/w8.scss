@@ -3,72 +3,103 @@ body.w8 {
   $border-radius: 3px;
   $border-width: 1px;
   $blur: 1px;
-  background: url(image_path("https://chesterlaw.s3.amazonaws.com/taikoo-shing.jpg")) no-repeat center center fixed; 
+  $background-url: "https://chesterlaw.s3.amazonaws.com/taikoo-shing.jpg";
+  background: url(image_path($background-url)) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow: hidden;  
+  overflow: hidden;
 
-  .modal {
+  .page-section {
     $width: 500px;
-    position: fixed;
-    left: 50%;
-    top: 15%;
     width: $width;
-    margin-left: -$width/2;
-    border-radius: $border-radius;
-    border: $border-width solid $red;
-    border-top-width: 2px;
-    border-bottom: 0;
-    box-shadow: -3px -2px $blur $red, 3px -2px $blur $red;
+    margin: 0 auto;
 
-    img {
+    .title-section {
+      $lime: $red;
       width: 100%;
-      padding: 1px;
-      padding-bottom: $blur + 3px;
-    }
-
-    .bottom-border {
+      background: $lime;
+      margin: 1em 0 0.8em;
+      box-shadow: 0 0 $blur+3 $lime;
+      border-radius: $border-radius;
+      height: $width*0.9;
       display: flex;
+      align-items: center;
 
-      .piece {
-        background: $red;
-        flex-grow: 1;
-        box-shadow: -3px -2px $blur $red,
-                    3px -2px $blur $red,
-                    -3px 2px $blur $red,
-                    3px 2px $blur $red;
-
-        &.left {
-          border-radius: $border-radius;
-          border-top-left-radius: 0;
-        }
-
-        &.right {
-          border-radius: $border-radius;
-          border-top-right-radius: 0;
-        }
-      }
-
-      .text {
-        color: $red;
-        padding: 0 0.35em;
+      .title {
+        line-height: 1;
+        color: black;
+        text-shadow: 0px 0px 1px black;
+        opacity: 0.79;
         text-transform: uppercase;
-        text-shadow: 0px 0px 1px lighten($red, 28%);
-
-        h2 {
-          display: inline-block;
-          line-height: 1;
-          font-weight: 400;
-          font-size: 1.1rem;
-        }
+        margin: 0 auto;
 
         h1 {
-          display: inline-block;
+          text-align: center;
+          font-size: 4rem;
+        }
+
+        h2 {
+          text-align: right;
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    .content-section {
+      width: calc(100% - 4px);
+      margin: 0 auto;
+      border-radius: $border-radius;
+      border: $border-width solid $red;
+      border-top-width: 2px;
+      border-bottom: 0;
+      box-shadow: -3px -2px $blur $red, 3px -2px $blur $red;
+
+      img {
+        width: 100%;
+        padding: 1px;
+        padding-bottom: $blur + 3px;
+      }
+
+      .bottom-border {
+        display: flex;
+
+        .piece {
+          background: $red;
+          flex-grow: 1;
+          box-shadow: -3px -2px $blur $red,
+                      3px -2px $blur $red,
+                      -3px 2px $blur $red,
+                      3px 2px $blur $red;
+
+          &.left {
+            border-radius: $border-radius;
+            border-top-left-radius: 0;
+          }
+
+          &.right {
+            border-radius: $border-radius;
+            border-top-right-radius: 0;
+          }
+        }
+
+        .text {
+          color: darken($red, 2%);
+          padding: 0 0.4em;
+          text-transform: uppercase;
+          text-shadow: 0px 0px 1px lighten($red, 15%);
           line-height: 1;
-          font-weight: 400;
-          font-size: 1.8rem;
+
+          h2 {
+            display: inline-block;
+            font-size: 1.1rem;
+          }
+
+          h1 {
+            display: inline-block;
+            font-size: 1.8rem;
+          }
         }
       }
     }
