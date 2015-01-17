@@ -1,0 +1,76 @@
+body.w8 {
+  $red: #DD0000;
+  $border-radius: 3px;
+  $border-width: 1px;
+  $blur: 1px;
+  background: url(image_path("https://chesterlaw.s3.amazonaws.com/taikoo-shing.jpg")) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;  
+
+  .modal {
+    $width: 500px;
+    position: fixed;
+    left: 50%;
+    top: 15%;
+    width: $width;
+    margin-left: -$width/2;
+    border-radius: $border-radius;
+    border: $border-width solid $red;
+    border-top-width: 2px;
+    border-bottom: 0;
+    box-shadow: -3px -2px $blur $red, 3px -2px $blur $red;
+
+    img {
+      width: 100%;
+      padding: 1px;
+      padding-bottom: $blur + 3px;
+    }
+
+    .bottom-border {
+      display: flex;
+
+      .piece {
+        background: $red;
+        flex-grow: 1;
+        box-shadow: -3px -2px $blur $red,
+                    3px -2px $blur $red,
+                    -3px 2px $blur $red,
+                    3px 2px $blur $red;
+
+        &.left {
+          border-radius: $border-radius;
+          border-top-left-radius: 0;
+        }
+
+        &.right {
+          border-radius: $border-radius;
+          border-top-right-radius: 0;
+        }
+      }
+
+      .text {
+        color: $red;
+        padding: 0 0.35em;
+        text-transform: uppercase;
+        text-shadow: 0px 0px 1px lighten($red, 28%);
+
+        h2 {
+          display: inline-block;
+          line-height: 1;
+          font-weight: 400;
+          font-size: 1.1rem;
+        }
+
+        h1 {
+          display: inline-block;
+          line-height: 1;
+          font-weight: 400;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
