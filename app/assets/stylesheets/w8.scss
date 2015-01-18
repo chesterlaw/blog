@@ -17,14 +17,14 @@ body.w8 {
     $width: 500px;
     max-width: $width;
     width: 97.5%;
-    margin: 0 auto;
+    margin: 0.8em auto;
 
     .title-section {
       $lime: $red;
       background: $lime;
       width: 100%;
       height: $width*0.9;
-      margin: 1em 0 0.8em;
+      margin-bottom: 0.8em;
       border-radius: $border-radius;
       box-shadow: 0 0 $blur+3 $lime;
       display: flex;
