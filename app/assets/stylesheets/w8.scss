@@ -17,16 +17,18 @@ body.w8 {
     $width: 500px;
     max-width: $width;
     width: 97.5%;
-    margin: 0.8em auto;
+    margin: 0 auto;
 
-    .title-section {
-      $lime: $red;
-      background: $lime;
+    .block {
+    }
+
+    .title-block {
+      background: $red;
+      margin: 0.8em 0;
       width: 100%;
       height: $width*0.9;
-      margin-bottom: 0.8em;
       border-radius: $border-radius;
-      box-shadow: 0 0 $blur+3 $lime;
+      box-shadow: 0 0 $blur+3 $red;
       display: flex;
       align-items: center;
 
@@ -65,9 +67,9 @@ body.w8 {
       }
     }
 
-    .content-section {
+    .picture-block {
+      margin: 0.8em 0;
       width: calc(100% - 4px);
-      margin: 0 auto;
       border-radius: $border-radius;
       border: $border-width solid $red;
       border-bottom: 0;
