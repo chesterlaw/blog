@@ -28,7 +28,7 @@ body.w8 {
       width: 100%;
       height: $width*0.9;
       border-radius: $border-radius;
-      box-shadow: 0 0 $blur+3 $red;
+      box-shadow: 0 0 $blur+1 $red, 0 0 $blur+1 $red, 0 0 $blur+1 $red;
       display: flex;
       align-items: center;
 
