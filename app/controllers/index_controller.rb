@@ -52,6 +52,9 @@ class IndexController < ApplicationController
     @message_2 = @message_2.split("/")
   end
 
+  def w10
+  end
+
   def afighters
   end
 
