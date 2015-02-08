@@ -11,6 +11,7 @@ MyBlog::Application.routes.draw do
   get "w/8", to: "index#w8", as: "w8"
   get "w/9", to: "index#w9", as: "w9"
   get "w/10", to: "index#w10", as: "w10"
+  get "w/11", to: "index#w11", as: "w11"
 
   get "w/a-fighters", to: "index#afighters", as: "afighters"
 

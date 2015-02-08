@@ -55,6 +55,18 @@ class IndexController < ApplicationController
   def w10
   end
 
+  def w11 # mewtwo
+    # s=bright-purple(super-purple), h=white-purple(haku)
+    characterToClass = {c: "clear", b: "black", w: "white", v: "very-light-purple", l: "light-purple", f: "faint-purple", n: "navy-purple", p: "purple", g: "grey-purple", s: "bright-purple", h: "white-purple", d: "dark-purple", x: "extreme-purple"}
+
+    colorsString = "ccccnffglnnccccccccccnffpxxsssplngffglbcclnbddblnlgfnppbcccccccccccc" + "ccccbffglnnccccccccclffpxxxssssnfffffglbdddppppbbgfffnbccccccccccccc" + "ccccbggbccccccccccclfffpxxxssssnffffffllbpppppppngfffnbccccccccccccc" + "cccccbbcccccccccccclfffpxxssssnfffffffllbppppppppnggnpbccccccccccccc" + "cccccccccccccccccclffffpssssssnffffffflllbppppppppnnppcccccccccccccc" + "cccccccccccccccccclffffpssssssnffffffglllbpppppppppppbcccccccccccccc" + "cccccccccccccccccclffffpssssspbffffffgllllbpppppppppbccccccccccccccc" + "ccccccccccccccccccclffgpsssssppbffffglllllbppppppppbcccccccccccccccc" + "cccccccccccccccccccbggllpppppppblgglllllllbpppppppbccccccccccccccccc" + "cccccccccccccccccccclllldpppppppblllllllllbpppppbbcccccccccccccccccc" + "ccccccccccccccccccccnllllddppppppbllllllllbppbbbcccccccccccccccccccc" + "cccccccccccccccccccccnllllldddppppblllllllbbbccccccccccccccccccccccc" + "ccccccccccccccccccccccnllllbccdddddbnllllllbcccccccccccccccccccccccc" + "ccccccccccccccccccccccnllllncccccddddbnllllbcccccccccccccccccccccccc" + "cccccccccccccccccccccccbgllncccccccccccbllllbccccccccccccccccccccccc" + "cccccccccccccccccccccccbgglnccccccccccccblllbccccccccccccccccccccccc" + "ccccccccccccccccccccccngggnccccccccccccccbllbccccccccccccccccccccccc" + "ccccccccccccccccccccccngggnccccccccccccccblllbcccccccccccccccccccccc" + "cccccccccccccccccccccnggggbcccccccccccccccbllbcccccccccccccccccccccc" + "ccccccccccccccccccccngffglncccccccccccccccbllbcccccccccccccccccccccc" + "ccccccccccccccccccclfffflggbcccccccccccccbgglbcccccccccccccccccccccc" + "cccccccccccccccclllffffgnggbccccccccccccbgggglbccccccccccccccccccccc" + "ccccccccccccccllggffffggbbbcccccccccccccbglgglnccccccccccccccccccccc" + "cccccccccccccnggnlfffggbccccccccccccccccbbgggllncccccccccccccccccccc" + "cccccccccccccngnfffgggbcccccccccccccccccbggggglncccccccccccccccccccc" + "ccccccccccccccbbgggggncccccccccccccccccbgffgggffnccccccccccccccccccc" + "ccccccccccccccccbbbbncccccccccccccccccbgffflgffffncccccccccccccccccc" + "ccccccccccccccccccccccccccccccccccccccbgfffbgfffgbcccccccccccccccccc" + "cccccccccccccccccccccccccccccccccccccccbggbcbgggbccccccccccccccccccc" + "ccccccccccccccccccccccccccccccccccccccccbbcccbbbcccccccccccccccccccc"
+
+    @colorsArray = []
+    colorsString.each_byte do |byte|
+      @colorsArray << characterToClass[byte.chr.to_sym]
+    end
+  end
+
   def afighters
   end
 

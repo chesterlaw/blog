@@ -1,0 +1,62 @@
+body.w11 {
+  $pixel-size: 10px;
+
+  div {
+    width: $pixel-size;
+    height: $pixel-size;
+    float: left;
+    // border: 1px solid #777;
+
+    &.clear {
+      background: 0;
+    }
+
+    &.black {
+      background: black;
+    }
+
+    &.white {
+      background: white;
+    }
+
+    &.very-light-purple {
+      background: #b4acc5;
+    }
+
+    &.light-purple {
+      background: #837b9c;
+    }
+
+    &.faint-purple {
+      background: #ded5e6;
+    }
+
+    &.navy-purple {
+      background: #393952;
+    }
+
+    &.purple {
+      background: #6a319c;
+    }
+
+    &.grey-purple {
+      background: #b4acc5;
+    }
+
+    &.bright-purple {
+      background: #9441bd;
+    }
+
+    &.white-purple {
+      background: #eee6ee;
+    }
+
+    &.dark-purple {
+      background: #392052;
+    }
+
+    &.extreme-purple {
+      background: #b44aee;
+    }
+  }
+}
