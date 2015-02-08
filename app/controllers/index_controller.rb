@@ -56,8 +56,7 @@ class IndexController < ApplicationController
   end
 
   def w11 # mewtwo
-    # s=bright-purple(super-purple), h=white-purple(haku)
-    characterToClass = {c: "clear", b: "black", w: "white", v: "very-light-purple", l: "light-purple", f: "faint-purple", n: "navy-purple", p: "purple", g: "grey-purple", s: "bright-purple", h: "white-purple", d: "dark-purple", x: "extreme-purple"}
+    characterToClass = {c: "clear", b: "black", w: "white", v: "very-light-purple", l: "light-purple", f: "faint-purple", n: "navy-purple", p: "purple", g: "grey-purple", s: "super-purple", h: "haku-purple", d: "dark-purple", x: "extreme-purple"}
 
     colorsString = 
     "ccccccccccccccccccccvvlllcccccccccllllcccccccccccccccccccccccccccccc" + 
