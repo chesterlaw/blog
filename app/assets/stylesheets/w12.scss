@@ -1,0 +1,101 @@
+body.w12 {
+  $red: #BB0000;
+  $black: #111;
+  $border-width: 2px;
+  $border-radius: 2px;
+  background: $black;
+  position: relative;
+  height: 100%;
+
+  .red-container {
+    width: 350px;
+    border-radius: $border-radius;
+    overflow: hidden;
+    border: $border-width+2 solid $red;
+    box-shadow: 0 0 1px $red, 0 0 1px $red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .header-section {
+      text-align: center;
+      background: $red;
+
+      .header {
+        display: inline-block;
+        padding-top: 0.2rem;
+
+        img {
+          width: 1.8rem;
+          float: left;
+          opacity: 0.85;
+        }
+
+        h1 {
+          margin-left: 0.5rem;
+          display: inline-block;
+          font-size: 2rem;
+          line-height: 1;
+          color: $black;
+          float: left;
+          text-transform: uppercase;
+          font-family: "Avenir-Medium", "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          text-shadow: 0 0 0.1px $black;
+        }
+      }
+    }
+
+    .level {
+      border-bottom: $border-width solid $red;
+      overflow: hidden;
+      color: $red;
+      text-align: center;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      p {
+        font-size: 0.6rem;          
+        text-shadow: 0 0 0.3px $red;
+      }
+
+      &.flex {
+        display: flex;
+        align-items: stretch;
+      }
+
+      .section-wrapper {
+        float: left;
+        background: $black;
+        display: flex;
+        align-items: stretch;
+        
+        &:first-child { border-right: $border-width solid $red;}
+
+        &.percent-50 {
+          text-align: left;
+        }
+
+        &.percent-25 {
+          text-align: left;
+        }
+
+        &.percent-100 {
+          width: 100%;
+
+          .section {
+            width: 100%;
+          }
+        }
+
+        .section {
+          padding: 0.5rem;
+          border-radius: $border-radius;
+          box-shadow: 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red;
+        }
+      }
+    }
+  }
+}
