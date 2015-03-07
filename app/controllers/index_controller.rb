@@ -134,6 +134,9 @@ class IndexController < ApplicationController
   def w12
   end
 
+  def w13
+  end
+
   def afighters
   end
 

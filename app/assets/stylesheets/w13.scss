@@ -1,0 +1,109 @@
+body.w13 {
+  height: 100%;
+  padding: 1rem;
+
+  .content {
+    height: 100%;
+    padding: 1rem;
+  }
+
+  .box {
+    border: 40px solid black;
+    float: left;
+    $column-1-width: 20%;
+    $column-2-width: 70%;
+    $column-3-width: 100% - $column-1-width - $column-2-width;
+    $row-1-height: 12%;
+    $row-2-height: 30%;
+    $row-3-height: 43%;
+    $row-4-height: 100% - $row-1-height - $row-2-height - $row-3-height;
+    $nine-width: 30%;
+    $ten-width: 100% - $column-1-width - $nine-width;
+
+    &.one {
+      width: $column-1-width;
+      height: $row-1-height;
+      border-right: 0;
+      border-bottom: 0;
+    }
+
+    &.two {
+      width: 100% - $column-1-width;
+      height: $row-1-height; 
+      border: 0;       
+    }
+
+    &.three {
+      height: $row-2-height;
+      width: $column-1-width;
+      border-top: 0;
+      border-right: 0;
+      border-bottom: 0;
+    }
+
+    &.four {
+      height: $row-2-height;
+      width: $column-2-width;
+      border-left: 0;
+      border-bottom: 0;
+    }
+
+    &.five {
+      height: $row-2-height;
+      width: $column-3-width;
+      border: 0;
+    }
+
+    &.six {
+      height: $row-3-height;
+      width: $column-1-width;
+      border-top: 0;
+      border-right: 0;
+      border-bottom: 0;
+    }
+
+    &.seven {
+      height: $row-3-height;
+      width: $column-2-width + $column-3-width;
+      border-left: 0;
+      border-bottom: 0;
+      border-top: 0;
+    }
+
+    &.eight {
+      height: $row-4-height;
+      width: $column-1-width;
+      border-top: 0;
+      border-right: 0;
+    }
+
+    &.nine {
+      height: $row-4-height;
+      width: $nine-width;
+      border-left: 0;
+      border-top: 0;
+      border-right: 0;
+    }
+
+    &.ten {
+      height: $row-4-height;
+      width: $ten-width;
+      border-left: 0;
+      border-bottom: 0;
+      border-right: 0;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
