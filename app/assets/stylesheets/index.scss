@@ -1,126 +1,44 @@
 body.index {
   $white: #FAFAFA;
-  $orange: #DF833C;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  min-width: 1024px;
-  background: url("https://chesterlaw.s3.amazonaws.com/taikoo-shing.jpg") no-repeat center center fixed;
-  min-width: 1800px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   .page-section {
-    float: right;
-    height: 100%;
-    position: relative;
     width: 90%;
-    min-width: 1000px;
-    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 1.3rem;
+  }
 
-    .chinese-title {
-      width: 20%;
-      height: 96%;
-      padding-top: 1.3em;
+  .chinese-title {
+    float: left;
 
-      h1 {
-        color: $white;
-        font-size: 8em;
-        text-align: right;
-        line-height: 1.1;
-        font-family: "Hiragino Sans GB", "STHeiti", sans-serif;
-        font-weight: 800;
-        &:last-child {
-          position: relative;
-          bottom: 0.7em;
-          left: 0.7em;
-        }
+    h1 {
+      color: black;
+      line-height: 1.05;
+      font-size: 9rem;
+      text-align: center;
+      font-family: "Hiragino Sans GB", "STHeiti", sans-serif;
+      font-weight: 800;
+
+      &:last-child {
+        position: relative;
+        bottom: 0.62em;
+        left: 0.7em;
       }
     }
+  }
 
-    .english-title {
-      position: absolute;
-      top: 3%;
-      right: 0;
+  .content {
+    padding-top: 0.5rem;
+  }
 
-      h1 {
-        font-size: 2.5em;
-        text-transform: uppercase;
-        font-weight: 500;
-        color: $orange;
-        text-align: right;
-        line-height: 0.9;
-      }
-    }
+  .english-title {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1;
+  }
 
-    .content {
-      position: absolute;
-      left: 18.5%;
-      top: 9.7em;
-      width: 750px;
-
-      .h2 {
-        font-weight: 700;
-        font-size: 1.6em;
-        display: inline;
-        line-height: 0;
-      }
-
-      p {
-        display: block;
-        font-weight: 500;
-        margin-bottom: 1em;
-        color: #333;
-      }
-
-      img {
-        display: block;
-        margin: 0 auto;
-        &:last-child {
-          margin-bottom: 2em;
-        }
-      }
-    }
-
-    .more {
-      position: absolute;
-      right: -2.4em;
-      top: 43%;
-      -webkit-transform:rotate(-90deg);
-      -moz-transform:rotate(-90deg);
-      -ms-transform:rotate(-90deg);
-      -o-transform:rotate(-90deg);
-
-      a {
-        color: $white;
-        font-weight: 900;
-        text-transform: uppercase;
-        font-size: 2em;
-        text-decoration: none;
-      }
-
-      p {
-        color: $white;
-        position: absolute;
-        top: 2.9em;
-        right: 45%;
-        -webkit-transform:rotate(90deg);
-        -moz-transform:rotate(90deg);
-        -ms-transform:rotate(90deg);
-        -o-transform:rotate(90deg);
-      }
-    }
-
-    footer {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-
-      p {
-        font-weight: 900;
-        margin-bottom: 1em;
-        margin-right: 1.5em;
-        color: $orange;
-      }
-    }
+  .content__paragraph {
   }
 }
