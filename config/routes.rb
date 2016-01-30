@@ -1,20 +1,22 @@
 MyBlog::Application.routes.draw do
   root 'index#no_w'
 
-  get "w", to: "index#w", as: "w"
-  get "w/2", to: "index#w2", as: "w2"
-  get "w/3", to: "index#w3", as: "w3"
-  get "w/4", to: "index#w4", as: "w4"
-  get "w/5", to: "index#w5", as: "w5"
-  get "w/6", to: "index#w6", as: "w6"
-  get "w/7", to: "index#w7", as: "w7"
-  get "w/8", to: "index#w8", as: "w8"
-  get "w/9", to: "index#w9", as: "w9"
-  get "w/10", to: "index#w10", as: "w10"
-  get "w/11", to: "index#w11", as: "w11"
-  get "w/12", to: "index#w12", as: "w12"
-  get "w/13", to: "index#w13", as: "w13"
+  scope :w do
+    get '', to: "index#index", as: :index
+    get "2", to: "index#index_2", as: "index_2"
+    get "3", to: "index#index_3", as: "index_3"
+    get "4", to: "index#index_4", as: "index_4"
+    get "5", to: "index#index_5", as: "index_5"
+    get "6", to: "index#index_6", as: "index_6"
+    get "7", to: "index#index_7", as: "index_7"
+    get "8", to: "index#index_8", as: "index_8"
+    get "9", to: "index#index_9", as: "index_9"
+    get "10", to: "index#index_10", as: "index_10"
+    get "11", to: "index#index_11", as: "index_11"
+    get "12", to: "index#index_12", as: "index_12"
+    get "13", to: "index#index_13", as: "index_13"
 
-  get "w/a-fighters", to: "index#afighters", as: "afighters"
+    get "a-fighters", to: "index#afighters", as: "afighters"
+  end
 
 end
