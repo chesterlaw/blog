@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 describe IndexController, :type => :controller do
+  render_views
+
   def expect_http_200 #Success
     expect(response).to be_success
     expect(response.status).to eq(200)
