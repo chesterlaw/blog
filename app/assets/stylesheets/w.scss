@@ -2,7 +2,7 @@ body.w {
   $white: #FAFAFA;
   $orange: #DF833C;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  min-width: 1024px;
-  background: url(image_path("https://chesterlaw.s3.amazonaws.com/taikoo-shing.jpg")) no-repeat center center fixed; 
+  background: url("https://chesterlaw.s3.amazonaws.com/taikoo-shing.jpg") no-repeat center center fixed;
   min-width: 1800px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
