@@ -15,15 +15,6 @@ class IndexController < ApplicationController
   def index_4
   end
 
-  def index_5
-  end
-
-  def index_6
-  end
-
-  def index_7
-  end
-
   def index_8
   end
 
@@ -50,9 +41,6 @@ class IndexController < ApplicationController
     @h1_2 = '真,的,歡,迎,你,來,到,參,觀,!!'.split(",")
     @message_1 = @message_1.split(",")
     @message_2 = @message_2.split("/")
-  end
-
-  def index_10
   end
 
   def index_11 # mewtwo
@@ -132,9 +120,6 @@ class IndexController < ApplicationController
   end
 
   def index_12
-  end
-
-  def index_13
   end
 
   def afighters

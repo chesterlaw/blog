@@ -37,21 +37,6 @@ describe IndexController, :type => :controller do
     expect_http_200
   end
 
-  it 'gets to index_5 successfully' do
-    get :index_5, format: :html
-    expect_http_200
-  end
-
-  it 'gets to index_6 successfully' do
-    get :index_6, format: :html
-    expect_http_200
-  end
-
-  it 'gets to index_7 successfully' do
-    get :index_7, format: :html
-    expect_http_200
-  end
-
   it 'gets to index_8 successfully' do
     get :index_8, format: :html
     expect_http_200
@@ -59,11 +44,6 @@ describe IndexController, :type => :controller do
 
   it 'gets to index_9 successfully' do
     get :index_9, format: :html
-    expect_http_200
-  end
-
-  it 'gets to index_10 successfully' do
-    get :index_10, format: :html
     expect_http_200
   end
 
@@ -76,12 +56,6 @@ describe IndexController, :type => :controller do
     get :index_12, format: :html
     expect_http_200
   end
-
-  it 'gets to index_13 successfully' do
-    get :index_13, format: :html
-    expect_http_200
-  end
-
 
   it 'gets to afighters successfully' do
     get :afighters, format: :html
