@@ -23,6 +23,9 @@ body.index {
       text-align: center;
       font-family: "Hiragino Sans GB", "STHeiti", sans-serif;
       font-weight: 800;
+      @media only screen and (max-width: 1000px) {
+        font-size: 14vw;
+      }
 
       &:last-child {
         position: relative;
