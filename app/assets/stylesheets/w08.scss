@@ -7,7 +7,7 @@ body.w8 {
   $background-black: rgba(0, 0, 0, 0.75);
   background:
     linear-gradient($background-black, $background-black),
-    url(image_path($background-url)) no-repeat center center fixed; 
+    url(image_path($background-url)) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

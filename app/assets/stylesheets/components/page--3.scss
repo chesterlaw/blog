@@ -1,0 +1,48 @@
+.page--3 {
+  $main: #D80000;
+  width: 800px;
+  margin: 0 auto;
+
+  padding: 1.2em 1em;
+
+  .red-section {
+    background: $main;
+    border-radius: 3px;
+
+    h1 {
+      color: white;
+      font-size: 8em;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 0.3em 1em;
+    }
+
+    ul {
+      color: white;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 2em;
+      padding: 1em 1.65em;
+      list-style-type: square;
+    }
+  }
+
+  .white-section {
+    h2 {
+      color: $main;
+      text-transform: uppercase;
+      font-size: 2.9em;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    h3 {
+      color: $main;
+      font-size: 1.45em;
+      text-transform: uppercase;
+      line-height: 0.5;
+      margin-bottom: -0.4em;
+      text-align: center;
+    }
+  }
+}
