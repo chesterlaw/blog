@@ -1,8 +1,10 @@
-@import "normalize.scss";
-@import "universal.scss";
+// Base
+@import "base/normalize.scss";
+@import "base/universal.scss";
 
+// Components
 @import "components/**/*";
 
-@import "w02.scss";
-
-@import "a-fighters.scss";
+// Trumps for individual pages
+@import "trumps/w02.scss";
+@import "trumps/a-fighters.scss";
