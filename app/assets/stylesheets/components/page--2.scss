@@ -1,6 +1,5 @@
 .page--2 {
-  $main: #D80000;
-  $helvetica-neue-condensed-bold: "HelveticaNeue-CondensedBold", "Helvetica Neue", Helvetica, Arial;
+  $red: #D80000;
   background: lighten(#E2DEFF, 3.8%);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 100%;
@@ -13,12 +12,12 @@
     margin: 0 auto;
   }
 
-  .title-section {
+  .page--2__title-section {
     position: relative;
     margin-left: 0.1em;
 
     h1 {
-      color: $main;
+      color: $red;
       font-size: 6em;
       -webkit-text-stroke: 3px black;
       line-height: 1; //magic number
@@ -36,8 +35,8 @@
     }
   }
 
-  .content-section {
-    background: $main;
+  .page--2__content-section {
+    background: $red;
     padding: 1em 1em 2.8em;
     border-radius: 3px;
     border: 1px solid black;
