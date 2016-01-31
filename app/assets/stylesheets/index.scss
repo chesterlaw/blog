@@ -1,51 +1,55 @@
 body.index {
-  $white: #FAFAFA;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  $chinese-title-width: 180px;
-  $space-between-elements: 4.5rem;
+  .page--2 {
+    $main: #D80000;
+    $helvetica-neue-condensed-bold: "HelveticaNeue-CondensedBold", "Helvetica Neue", Helvetica, Arial;
+    background: lighten(#E2DEFF, 3.8%);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%;
+    padding: 7em 0;
+    height: 100vh;
 
-  .page-section {
-    width: 97%;
-    max-width: 1000px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding-top: $space-between-elements;
-    display: flex;
-  }
+    .page--2__section {
+      max-width: 900px;
+      width: 90%;
+      margin: 0 auto;
+    }
 
-  .chinese-title {
-    width: $chinese-title-width;
+    .title-section {
+      position: relative;
+      margin-left: 0.1em;
 
-    h1 {
-      color: black;
-      line-height: 1.05;
-      font-size: 9rem;
-      text-align: center;
-      font-family: "Hiragino Sans GB", "STHeiti", sans-serif;
-      font-weight: 800;
-      @media only screen and (max-width: 1000px) {
-        font-size: 14vw;
-      }
-
-      &:last-child {
+      h1 {
+        color: $main;
+        font-size: 6em;
+        -webkit-text-stroke: 3px black;
+        line-height: 1; //magic number
         position: relative;
-        bottom: 0.62em;
-        left: 0.7em;
+        top: 0.16em; //magic number
+
+        &::after {
+          content: "Chester Law";
+          position: absolute;
+          top: 0;
+          left: 0;
+          -webkit-text-stroke: 0;
+          z-index: 2;
+        }
       }
     }
-  }
 
-  .content {
-    padding-left: $space-between-elements/2;
-  }
+    .content-section {
+      background: $main;
+      padding: 1em 1em 2.8em;
+      border-radius: 3px;
+      border: 1px solid black;
+      position: relative;
+      z-index: 1;
 
-  .english-title {
-    font-size: 4rem;
-    font-weight: 800;
-    line-height: 1;
-    padding-bottom: $space-between-elements/3;
-  }
-
-  .content__paragraph {
+      p {
+        font-size: 1.2em;
+        color: lighten(#FFCA1C, 10%);
+        font-weight: 300;
+      }
+    }
   }
 }
