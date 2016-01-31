@@ -1,0 +1,58 @@
+.page--4 {
+  .title-section {
+    transform: rotate(4.5deg);
+    overflow: hidden;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 2em;
+
+    .title {
+      float: right;
+
+      h1, h2, h3 {
+        line-height: 1;
+        text-align: center;
+        color: black;
+        text-shadow: 0 0 1px black;
+      }
+
+      h1 { font-size: 6rem; }
+      h2 {font-size: 3rem; }
+      h3 {font-size: 2rem; }
+
+      &.period-ender {
+        :last-child {
+          position: relative;
+          bottom: 0.5em;
+          left: 0.55em;
+        }
+      }
+
+      &.comma-ender {
+        :last-child {
+          position: relative;
+          bottom: 0.55em;
+        }
+      }
+
+      &.quoter {
+        :first-child {
+          transform: rotate(90deg);
+          margin-top: -0.6em;
+        }
+
+        :nth-child(7) {
+          transform: rotate(90deg);
+          margin-bottom: -0.45em;
+        }
+      }
+
+      &.many-commas {
+        :nth-child(5), :nth-child(11) {
+          margin-top: -0.4em;
+          margin-bottom: 0.28em;
+        }
+      }
+    }
+  }
+}

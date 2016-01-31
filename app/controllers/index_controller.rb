@@ -4,18 +4,8 @@ class IndexController < ApplicationController
 
   def index
     @chinese_title = ['羅', '彦', '章', '之', '網', '站', '。']
-  end
 
-  def index_2
-  end
-
-  def index_3
-  end
-
-  def index_4
-  end
-
-  def index_5
+    # Page 4
     month = Time.now.strftime("%m")
     chinese_months = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十,一", "十,二"]
     month_index = month.to_i - 1
@@ -38,6 +28,19 @@ class IndexController < ApplicationController
     @h1_2 = '真,的,歡,迎,你,來,到,參,觀,!!'.split(",")
     @message_1 = @message_1.split(",")
     @message_2 = @message_2.split("/")
+  end
+
+  def index_2
+  end
+
+  def index_3
+  end
+
+  def index_4
+  end
+
+  def index_5
+
   end
 
   def index_6 # mewtwo

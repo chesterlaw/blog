@@ -1,0 +1,17 @@
+.page.page--4
+  .title-section
+    .h2.title.period-ender
+      - @date.each do |character|
+        %h2= character
+    .h1.title.comma-ender
+      - @h1_1.each do |character|
+        %h1= character
+    .h1.title
+      - @h1_2.each do |character|
+        %h1= character
+    .h3.title.period-ender.quoter
+      - @message_1.each do |character|
+        %h3= character
+    .h3.title.many-commas
+      - @message_2.each do |character|
+        %h3= character
