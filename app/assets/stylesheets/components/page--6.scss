@@ -1,4 +1,4 @@
-body.w12 {
+.page--6 {
   $red: #BB0000;
   $black: #111;
   $border-width: 2px;
@@ -57,7 +57,7 @@ body.w12 {
       }
 
       p {
-        font-size: 0.6rem;          
+        font-size: 0.6rem;
         text-shadow: 0 0 0.3px $red;
       }
 
@@ -71,7 +71,7 @@ body.w12 {
         background: $black;
         display: flex;
         align-items: stretch;
-        
+
         &:first-child { border-right: $border-width solid $red;}
 
         &.percent-50 {
