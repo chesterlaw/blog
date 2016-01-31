@@ -1,17 +1,22 @@
 body.index {
   $white: #FAFAFA;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  $chinese-title-width: 180px;
+  $space-between-elements: 4.5rem;
 
   .page-section {
-    width: 90%;
+    width: 97%;
     max-width: 1000px;
     margin: 0 auto;
     overflow: hidden;
-    padding-top: 1.3rem;
+    padding-top: $space-between-elements;
+    background: green;
   }
 
   .chinese-title {
     float: left;
+    width: $chinese-title-width;
+    background: blue;
 
     h1 {
       color: black;
@@ -30,13 +35,17 @@ body.index {
   }
 
   .content {
-    padding-top: 0.5rem;
+    width: calc(100% - #{$chinese-title-width});
+    float: left;
+    padding-left: $space-between-elements/4;
+    background: yellow;
   }
 
   .english-title {
     font-size: 4rem;
     font-weight: 800;
     line-height: 1;
+    padding-bottom: $space-between-elements/3;
   }
 
   .content__paragraph {
