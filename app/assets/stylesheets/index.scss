@@ -10,13 +10,11 @@ body.index {
     margin: 0 auto;
     overflow: hidden;
     padding-top: $space-between-elements;
-    background: green;
+    display: flex;
   }
 
   .chinese-title {
-    float: left;
     width: $chinese-title-width;
-    background: blue;
 
     h1 {
       color: black;
@@ -35,10 +33,7 @@ body.index {
   }
 
   .content {
-    width: calc(100% - #{$chinese-title-width});
-    float: left;
     padding-left: $space-between-elements/4;
-    background: yellow;
   }
 
   .english-title {
