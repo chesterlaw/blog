@@ -9,11 +9,11 @@
   box-shadow: 0 0 1px $red, 0 0 1px $red;
   margin: 0 auto;
 
-  .header-section {
+  .riyarchy-label__header-section {
     text-align: center;
     background: $red;
 
-    .header {
+    .riyarchy-label__header-section__header {
       display: inline-block;
       padding-top: 0.2rem;
 
@@ -37,11 +37,13 @@
     }
   }
 
-  .level {
+  .riyarchy-label__level {
     border-bottom: $border-width solid $red;
     overflow: hidden;
     color: $red;
     text-align: center;
+    display: flex;
+    align-items: stretch;
 
     &:last-child {
       border-bottom: 0;
@@ -50,11 +52,6 @@
     p {
       font-size: 0.6rem;
       text-shadow: 0 0 0.3px $red;
-    }
-
-    &.flex {
-      display: flex;
-      align-items: stretch;
     }
 
     .section-wrapper {
