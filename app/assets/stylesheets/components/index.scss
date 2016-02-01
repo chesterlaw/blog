@@ -1,4 +1,4 @@
-.page--1 {
+.index {
   $space-between-elements: 4.5rem;
   $chinese-title-width: 180px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -10,7 +10,7 @@
   padding-top: $space-between-elements;
   display: flex;
 
-  .page--1__chinese-title {
+  .index__chinese-title {
     width: $chinese-title-width;
 
     h1 {
@@ -32,11 +32,11 @@
     }
   }
 
-  .page--1__content {
+  .index__content {
     padding-left: $space-between-elements/2;
   }
 
-  .page--1__english-title {
+  .index__english-title {
     font-size: 4rem;
     font-weight: 800;
     line-height: 1;
