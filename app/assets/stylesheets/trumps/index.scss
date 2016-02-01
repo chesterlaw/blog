@@ -2,7 +2,6 @@
   $space-between-elements: 4.5rem;
   $chinese-title-width: 180px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
   width: 97%;
   max-width: 1000px;
   margin: 0 auto;
@@ -34,12 +33,17 @@
 
   .index__content {
     padding-left: $space-between-elements/2;
+    font-size: 2rem;
+    font-weight: 800;
+
+    ul {
+      list-style-type: circle;
+    }
   }
 
   .index__english-title {
     font-size: 4rem;
     font-weight: 800;
     line-height: 1;
-    padding-bottom: $space-between-elements/3;
   }
 }
