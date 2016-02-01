@@ -1,62 +1,62 @@
 .mewtwo {
-  $pixel-size: 10px;
   overflow: hidden;
+}
 
-  div {
-    width: $pixel-size;
-    height: $pixel-size;
-    float: left;
+.mewtwo__pixel {
+  $pixel-size: 10px;
+  width: $pixel-size;
+  height: $pixel-size;
+  float: left;
+}
 
-    &.clear {
-      background: 0;
-    }
+.mewtwo__pixel--clear {
+  background: 0;
+}
 
-    &.black {
-      background: black;
-    }
+.mewtwo__pixel--black {
+  background: black;
+}
 
-    &.white {
-      background: white;
-    }
+.mewtwo__pixel--white {
+  background: white;
+}
 
-    &.very-light-purple {
-      background: #b4acc5;
-    }
+.mewtwo__pixel--very-light-purple {
+  background: #b4acc5;
+}
 
-    &.light-purple {
-      background: #837b9c;
-    }
+.mewtwo__pixel--light-purple {
+  background: #837b9c;
+}
 
-    &.faint-purple {
-      background: #ded5e6;
-    }
+.mewtwo__pixel--faint-purple {
+  background: #ded5e6;
+}
 
-    &.navy-purple {
-      background: #393952;
-    }
+.mewtwo__pixel--navy-purple {
+  background: #393952;
+}
 
-    &.purple {
-      background: #6a319c;
-    }
+.mewtwo__pixel--purple {
+  background: #6a319c;
+}
 
-    &.grey-purple {
-      background: #b4acc5;
-    }
+.mewtwo__pixel--grey-purple {
+  background: #b4acc5;
+}
 
-    &.super-purple {
-      background: #9441bd;
-    }
+.mewtwo__pixel--super-purple {
+  background: #9441bd;
+}
 
-    &.haku-purple {
-      background: #eee6ee;
-    }
+.mewtwo__pixel--haku-purple {
+  background: #eee6ee;
+}
 
-    &.dark-purple {
-      background: #392052;
-    }
+.mewtwo__pixel--dark-purple {
+  background: #392052;
+}
 
-    &.extreme-purple {
-      background: #b44aee;
-    }
-  }
+.mewtwo__pixel--extreme-purple {
+  background: #b44aee;
 }
