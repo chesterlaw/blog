@@ -2,19 +2,20 @@
   $main: #D80000;
   padding-top: 1rem;
 
-  .red-section {
+  .red-white-block__red-section {
     background: $main;
     border-radius: 3px;
 
-    h1 {
+    .red-white-block__red-section__title {
       color: white;
       font-size: 8em;
       text-transform: uppercase;
       text-align: center;
       padding: 0.3em 1em;
+      font-weight: 800;
     }
 
-    ul {
+    .red-white-block__red-section__list {
       color: white;
       text-transform: uppercase;
       font-weight: 800;
@@ -22,28 +23,31 @@
       padding: 1em 1.65em;
       list-style-type: square;
 
-      a {
+      .red-white-block__red-section__list__link {
         color: white;
       }
     }
   }
 
-  .white-section {
-    h2 {
+  .red-white-block__white-section {
+    .red-white-block__white-section__title {
       color: $main;
       text-transform: uppercase;
       font-size: 2.9em;
       line-height: 1.7;
       text-align: center;
+      font-weight: 800;
     }
 
-    h3 {
-      color: $main;
+    .red-white-block__white-section__title--1 {
+      font-size: 2.9em;
+      line-height: 1.7;
+    }
+
+    .red-white-block__white-section__title--2 {
       font-size: 1.45em;
-      text-transform: uppercase;
       line-height: 0.5;
       margin-bottom: -0.4em;
-      text-align: center;
     }
   }
 }
