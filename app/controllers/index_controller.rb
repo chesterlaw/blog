@@ -5,19 +5,15 @@ class IndexController < ApplicationController
 
   def index
     @chinese_title = ['羅', '彦', '章', '之', '網', '站', '。']
-    get_page_4
-    get_page_5
   end
 
   def experiments
-    index
-  end
-
-  def index_7
+    get_chinese_title
+    get_mewtwo
   end
 
   private
-    def get_page_4
+    def get_chinese_title
       month = Time.now.strftime("%m")
       chinese_months = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十,一", "十,二"]
       month_index = month.to_i - 1
@@ -42,7 +38,7 @@ class IndexController < ApplicationController
       @message_2 = @message_2.split("/")
     end
 
-    def get_page_5 # mewtwo
+    def get_mewtwo # mewtwo
       characterToClass = {c: "clear", b: "black", w: "white", v: "very-light-purple", l: "light-purple", f: "faint-purple", n: "navy-purple", p: "purple", g: "grey-purple", s: "super-purple", h: "haku-purple", d: "dark-purple", x: "extreme-purple"}
 
       colorsString =
