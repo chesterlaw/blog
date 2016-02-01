@@ -25,16 +25,13 @@
 
   .merge-title__content {
     background: $red;
-    padding: 1em 1em 2.8em;
+    padding: 1em;
     border-radius: 3px;
     border: 1px solid black;
     position: relative;
     z-index: 1;
-
-    p {
-      font-size: 1.2em;
-      color: lighten(#FFCA1C, 10%);
-      font-weight: 300;
-    }
+    font-size: 1.2em;
+    color: #ffd64f;
+    font-weight: 300;
   }
 }
