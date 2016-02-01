@@ -1,5 +1,6 @@
 class IndexController < ApplicationController
   def no_w
+    redirect_to index_path
   end
 
   def index

@@ -3,13 +3,18 @@ require 'rails_helper'
 describe IndexController, :type => :controller do
   render_views
 
-  def expect_http_200 #Success
+  def expect_http_200 # Success
     expect(response.status).to eq(200)
+  end
+
+  def expect_http_302 # Redirect
+    expect(response.status).to eq(302)
   end
 
   it 'gets to no_w successfully' do
     get :no_w, format: :html
-    expect_http_200
+    expect_http_302
+    expect(response).to redirect_to(index_url)
   end
 
   it 'gets to index successfully' do
