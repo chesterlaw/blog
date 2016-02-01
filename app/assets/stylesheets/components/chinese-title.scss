@@ -34,7 +34,7 @@
     }
 
     &.quoter {
-      margin-right: 0.5rem;
+      margin-right: 0.5rem; // magic number
 
       :first-child {
         transform: rotate(90deg);
@@ -48,7 +48,7 @@
     }
 
     &.many-commas {
-      margin-right: -0.4rem;
+      margin-right: -0.4rem; // magic number
 
       :nth-child(5), :nth-child(11) {
         margin-top: -0.4em;
