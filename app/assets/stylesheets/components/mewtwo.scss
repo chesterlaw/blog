@@ -1,11 +1,11 @@
 .mewtwo {
   $pixel-size: 10px;
+  overflow: hidden;
 
   div {
     width: $pixel-size;
     height: $pixel-size;
     float: left;
-    // border: 1px solid #777;
 
     &.clear {
       background: 0;
