@@ -16,9 +16,6 @@ class IndexController < ApplicationController
   def index_7
   end
 
-  def afighters
-  end
-
   private
     def get_page_4
       month = Time.now.strftime("%m")

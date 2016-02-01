@@ -5,7 +5,7 @@ MyBlog::Application.routes.draw do
     get '', to: "index#index", as: :index
     get 'new', to: "index#index_new", as: :index_new
     get "2", to: "index#index_2", as: "index_2"
-    get "a-fighters", to: "index#afighters", as: "afighters"
+    get "a-fighters", to: "index#a_fighters", as: "a_fighters"
   end
 
 end
