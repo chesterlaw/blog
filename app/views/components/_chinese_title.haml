@@ -1,19 +1,19 @@
 -# Vertical chinese text that is slanted.
 
 .chinese-title
-  .h2.title.period-ender
+  .chinese-title__sentence.chinese-title__sentence--period-ender
     - @date.each do |character|
       %h2= character
-  .h1.title.comma-ender
+  .chinese-title__sentence.chinese-title__sentence--comma-ender
     - @h1_1.each do |character|
       %h1= character
-  .h1.title
+  .chinese-title__sentence
     - @h1_2.each do |character|
       %h1= character
-  .h3.title.period-ender.quoter
+  .chinese-title__sentence.chinese-title__sentence--period-ender.chinese-title__sentence--quoter
     = link_to a_fighters_path do
       - @message_1.each do |character|
         %h3= character
-  .h3.title.many-commas
+  .chinese-title__sentence.chinese-title__sentence--many-commas
     - @message_2.each do |character|
       %h3= character

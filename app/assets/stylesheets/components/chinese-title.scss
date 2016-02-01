@@ -3,57 +3,57 @@
   overflow: hidden;
   margin: 0 auto;
   padding-top: 2em;
+}
 
-  .title {
-    float: right;
+.chinese-title__sentence {
+  float: right;
 
-    h1, h2, h3 {
-      line-height: 1;
-      text-align: center;
-      color: black;
-      text-shadow: 0 0 1px black;
-    }
+  h1, h2, h3 {
+    line-height: 1;
+    text-align: center;
+    color: black;
+    text-shadow: 0 0 1px black;
+  }
 
-    h1 {font-size: 6rem;}
-    h2 {font-size: 3rem;}
-    h3 {font-size: 2rem;}
+  h1 {font-size: 6rem;}
+  h2 {font-size: 3rem;}
+  h3 {font-size: 2rem;}
+}
 
-    &.period-ender {
-      :last-child {
-        position: relative;
-        bottom: 0.5em;
-        left: 0.55em;
-      }
-    }
+.chinese-title__sentence--period-ender {
+  :last-child {
+    position: relative;
+    bottom: 0.5em;
+    left: 0.55em;
+  }
+}
 
-    &.comma-ender {
-      :last-child {
-        position: relative;
-        bottom: 0.55em;
-      }
-    }
+.chinese-title__sentence--comma-ender {
+  :last-child {
+    position: relative;
+    bottom: 0.55em;
+  }
+}
 
-    &.quoter {
-      margin-right: 0.5rem; // magic number
+.chinese-title__sentence--quoter {
+  margin-right: 0.5rem; // magic number
 
-      :first-child {
-        transform: rotate(90deg);
-        margin-top: -0.6em;
-      }
+  :first-child {
+    transform: rotate(90deg);
+    margin-top: -0.6em;
+  }
 
-      :nth-child(7) {
-        transform: rotate(90deg);
-        margin-bottom: -0.45em;
-      }
-    }
+  :nth-child(7) {
+    transform: rotate(90deg);
+    margin-bottom: -0.45em;
+  }
+}
 
-    &.many-commas {
-      margin-right: -0.4rem; // magic number
+.chinese-title__sentence--many-commas {
+  margin-right: -0.4rem; // magic number
 
-      :nth-child(5), :nth-child(11) {
-        margin-top: -0.4em;
-        margin-bottom: 0.28em;
-      }
-    }
+  :nth-child(5), :nth-child(11) {
+    margin-top: -0.4em;
+    margin-bottom: 0.28em;
   }
 }
