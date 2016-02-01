@@ -9,7 +9,7 @@ class IndexController < ApplicationController
     get_page_5
   end
 
-  def index_new
+  def experiments
     index
   end
 
