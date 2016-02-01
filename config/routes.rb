@@ -3,6 +3,7 @@ MyBlog::Application.routes.draw do
 
   scope :w do
     get '', to: "index#index", as: :index
+    get 'new', to: "index#index_new", as: :index_new
     get "2", to: "index#index_2", as: "index_2"
     get "3", to: "index#index_3", as: "index_3"
     get "4", to: "index#index_4", as: "index_4"

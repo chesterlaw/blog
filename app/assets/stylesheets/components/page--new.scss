@@ -1,0 +1,110 @@
+.index-new {
+  margin: 0 auto;
+  width: 1000px;
+  position: relative;
+  padding-right: 18.5rem;
+}
+
+$red: #D80000;
+
+.merge-title {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.merge-title__title {
+  position: relative;
+  margin-left: 0.1em;
+
+  h1 {
+    color: $red;
+    font-size: 6em;
+    -webkit-text-stroke: 3px black;
+    line-height: 1; //magic number
+    position: relative;
+    top: 0.16em; //magic number
+
+    &::after {
+      content: "Chester Law";
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-text-stroke: 0;
+      z-index: 2;
+    }
+  }
+}
+
+.merge-title__content {
+  background: $red;
+  padding: 1em 1em 2.8em;
+  border-radius: 3px;
+  border: 1px solid black;
+  position: relative;
+  z-index: 1;
+
+  p {
+    font-size: 1.2em;
+    color: lighten(#FFCA1C, 10%);
+    font-weight: 300;
+  }
+}
+
+.chinese-title {
+  transform: rotate(4.5deg);
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 2em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+
+  .title {
+    float: right;
+
+    h1, h2, h3 {
+      line-height: 1;
+      text-align: center;
+      color: black;
+      text-shadow: 0 0 1px black;
+    }
+
+    h1 { font-size: 6rem; }
+    h2 {font-size: 3rem; }
+    h3 {font-size: 2rem; }
+
+    &.period-ender {
+      :last-child {
+        position: relative;
+        bottom: 0.5em;
+        left: 0.55em;
+      }
+    }
+
+    &.comma-ender {
+      :last-child {
+        position: relative;
+        bottom: 0.55em;
+      }
+    }
+
+    &.quoter {
+      :first-child {
+        transform: rotate(90deg);
+        margin-top: -0.6em;
+      }
+
+      :nth-child(7) {
+        transform: rotate(90deg);
+        margin-bottom: -0.45em;
+      }
+    }
+
+    &.many-commas {
+      :nth-child(5), :nth-child(11) {
+        margin-top: -0.4em;
+        margin-bottom: 0.28em;
+      }
+    }
+  }
+}

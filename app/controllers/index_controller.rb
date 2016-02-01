@@ -8,6 +8,10 @@ class IndexController < ApplicationController
     get_page_5
   end
 
+  def index_new
+    index
+  end
+
   def index_7
   end
 
