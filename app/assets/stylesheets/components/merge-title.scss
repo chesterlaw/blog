@@ -5,23 +5,21 @@
   .merge-title__title {
     position: relative;
     margin-left: 0.1em;
+    color: $red;
+    font-size: 6em;
+    -webkit-text-stroke: 3px black;
+    line-height: 1; //magic number
+    position: relative;
+    top: 0.16em; //magic number
+    font-weight: 800;
 
-    h1 {
-      color: $red;
-      font-size: 6em;
-      -webkit-text-stroke: 3px black;
-      line-height: 1; //magic number
-      position: relative;
-      top: 0.16em; //magic number
-
-      &::after {
-        content: "Chester Law";
-        position: absolute;
-        top: 0;
-        left: 0;
-        -webkit-text-stroke: 0;
-        z-index: 2;
-      }
+    &::after {
+      content: "Chester Law";
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-text-stroke: 0;
+      z-index: 2;
     }
   }
 
