@@ -1,6 +1,6 @@
-$red: #EB190A;
-
 .a-fighters.page-section-wrapper {
+  $red: #EB190A;
+
   a.back {
     position: absolute;
     top: 0;
@@ -13,7 +13,6 @@ $red: #EB190A;
   }
 
   .page-section {
-
     margin: 0 auto;
     height: 100%;
     width: 752px;
@@ -21,7 +20,6 @@ $red: #EB190A;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
-    
     img {
       display: block;
       margin: 0 auto;
@@ -46,7 +44,7 @@ $red: #EB190A;
         font-weight: 800;
       }
     }
-      
+
     .red_tab {
       background: $red;
       padding: 1.5em 0 1em;
@@ -69,12 +67,3 @@ $red: #EB190A;
     }
   }
 }
-
-
-
-
-
-
-
-
-
