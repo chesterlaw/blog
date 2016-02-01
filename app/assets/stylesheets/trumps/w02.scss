@@ -1,124 +1,106 @@
-body.w2 {
+.eva-block {
+  $width: 500px;
   $red: #DD0000;
   $border-radius: 3px;
   $border-width: 1px;
   $blur: 1px;
-  $background-url: "https://chesterlaw.s3.amazonaws.com/taikoo-shing.jpg";
-  $background-black: rgba(0, 0, 0, 0.75);
-  background:
-    linear-gradient($background-black, $background-black),
-    url(image_path($background-url)) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 
-  .page-section {
-    $width: 500px;
-    max-width: $width;
-    width: 97.5%;
-    margin: 0 auto;
+  max-width: $width;
+  width: 97.5%;
+  margin: 0.8rem auto;
+  border-radius: $border-radius;
 
-    .block {
+  &.eva-block--title {
+    background: $red;
+    height: $width*0.9;
+    box-shadow: 0 0 $blur+1 $red, 0 0 $blur+1 $red, 0 0 $blur+1 $red;
+    display: flex;
+    align-items: center;
+
+    .title {
+      margin: 0 auto;
+      text-transform: uppercase;
+      line-height: 1;
+      color: black;
+      text-shadow: 0px 0px 1px black;
+      opacity: 0.79;
+      $h1-size: 4rem;
+      $h1-size-2: 3rem;
+      $h1-size-3: 2rem;
+
+      h1 {
+        text-align: center;
+        font-size: $h1-size;
+        @media only screen and (max-width: 459px) {
+          font-size: $h1-size-2;
+        }
+        @media only screen and (max-width: 329px) {
+          font-size: $h1-size-3;
+        }
+      }
+
+      h2 {
+        text-align: right;
+        font-size: 0.61803398875*$h1-size;
+        @media only screen and (max-width: 459px) {
+          font-size: 0.61803398875*$h1-size-2;
+        }
+        @media only screen and (max-width: 329px) {
+          font-size: 0.61803398875*$h1-size-3;
+        }
+      }
+    }
+  }
+
+  &.eva-block--picture {
+    width: calc(100% - 4px);
+    border: $border-width solid $red;
+    border-bottom: 0;
+    border-top-width: 2px;
+    box-shadow: -3px -2px $blur $red, 3px -2px $blur $red;
+
+    img {
+      width: 100%;
+      padding: 1px;
+      padding-bottom: $blur + 3px;
     }
 
-    .title-block {
-      background: $red;
-      margin: 0.8em 0;
-      width: 100%;
-      height: $width*0.9;
-      border-radius: $border-radius;
-      box-shadow: 0 0 $blur+1 $red, 0 0 $blur+1 $red, 0 0 $blur+1 $red;
+    .bottom-border {
       display: flex;
-      align-items: center;
 
-      .title {
-        margin: 0 auto;
+      .piece {
+        background: $red;
+        flex-grow: 1;
+        border-radius: $border-radius;
+        box-shadow: -3px -2px $blur $red,
+                    3px -2px $blur $red,
+                    -3px 2px $blur $red,
+                    3px 2px $blur $red;
+
+        &.left { border-top-left-radius: 0; }
+        &.right { border-top-right-radius: 0; }
+      }
+
+      .text {
         text-transform: uppercase;
         line-height: 1;
-        color: black;
-        text-shadow: 0px 0px 1px black;
-        opacity: 0.79;
-        $h1-size: 4rem;
-        $h1-size-2: 3rem;
-        $h1-size-3: 2rem;
-
-        h1 {
-          text-align: center;
-          font-size: $h1-size;
-          @media only screen and (max-width: 459px) {
-            font-size: $h1-size-2;
-          }
-          @media only screen and (max-width: 329px) {
-            font-size: $h1-size-3;
-          }
-        }
+        color: darken($red, 2%);
+        padding: 0 0.4em;
+        text-shadow: 0px 0px 1px lighten($red, 15%);
 
         h2 {
-          text-align: right;
-          font-size: 0.61803398875*$h1-size;
+          display: inline-block;
+          font-size: 1.1rem;
           @media only screen and (max-width: 459px) {
-            font-size: 0.61803398875*$h1-size-2;
-          }
-          @media only screen and (max-width: 329px) {
-            font-size: 0.61803398875*$h1-size-3;
+            display: block;
           }
         }
-      }
-    }
 
-    .picture-block {
-      margin: 0.8em 0;
-      width: calc(100% - 4px);
-      border-radius: $border-radius;
-      border: $border-width solid $red;
-      border-bottom: 0;
-      border-top-width: 2px;
-      box-shadow: -3px -2px $blur $red, 3px -2px $blur $red;
-
-      img {
-        width: 100%;
-        padding: 1px;
-        padding-bottom: $blur + 3px;
-      }
-
-      .bottom-border {
-        display: flex;
-
-        .piece {
-          background: $red;
-          flex-grow: 1;
-          border-radius: $border-radius;
-          box-shadow: -3px -2px $blur $red,
-                      3px -2px $blur $red,
-                      -3px 2px $blur $red,
-                      3px 2px $blur $red;
-
-          &.left { border-top-left-radius: 0; }
-          &.right { border-top-right-radius: 0; }
-        }
-
-        .text {
-          text-transform: uppercase;
-          line-height: 1;
-          color: darken($red, 2%);
-          padding: 0 0.4em;
-          text-shadow: 0px 0px 1px lighten($red, 15%);
-
-          h2 {
-            display: inline-block;
-            font-size: 1.1rem;
-            @media only screen and (max-width: 459px) {
-              display: block;
-            }
-          }
-
-          h1 {
-            display: inline-block;
-            font-size: 1.8rem;
-            @media only screen and (max-width: 459px) {
-              display: block;
-            }
+        h1 {
+          display: inline-block;
+          font-size: 1.8rem;
+          @media only screen and (max-width: 459px) {
+            display: block;
           }
         }
       }
