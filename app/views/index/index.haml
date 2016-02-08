@@ -1,11 +1,10 @@
-.index
-  .index__chinese-title
-    - @chinese_title.each do |character|
-      %h1= character
+- @body_classes = :experiments
 
-  .index__content
-    .index__english-title Chester Law's Website
-    %ul
-      %li= link_to 'Twitter', 'https://twitter.com/chesterlaww'
-      %li= link_to 'GitHub', 'https://github.com/chesterlaw'
-      %li{style: 'opacity: 0'}= link_to 'Experiments', experiments_path
+.centered-block
+  = render 'components/chinese_title'
+  = render 'components/merge_title'
+= render 'components/mewtwo'
+.centered-block
+  = render 'components/red_white_block'
+.centered-block
+  = render 'components/riyarchy_label'

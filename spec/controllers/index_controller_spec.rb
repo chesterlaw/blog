@@ -22,11 +22,6 @@ describe IndexController, :type => :controller do
     expect_http_200
   end
 
-  it 'gets to experiments successfully' do
-    get :experiments, format: :html
-    expect_http_200
-  end
-
   it 'gets to afighters successfully' do
     get :a_fighters, format: :html
     expect_http_200

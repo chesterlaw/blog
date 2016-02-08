@@ -4,10 +4,6 @@ class IndexController < ApplicationController
   end
 
   def index
-    @chinese_title = ['羅', '彦', '章', '之', '網', '站', '。']
-  end
-
-  def experiments
     get_chinese_title
     get_mewtwo
   end
