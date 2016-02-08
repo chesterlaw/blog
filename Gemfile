@@ -26,3 +26,6 @@ group :development do
   gem 'bullet'
   gem 'rspec-rails'
 end
+
+gem 'puma'
+
