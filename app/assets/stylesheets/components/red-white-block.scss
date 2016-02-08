@@ -1,9 +1,8 @@
 .red-white-block {
-  $main: #D80000;
   padding-top: 1rem;
 
   .red-white-block__red-section {
-    background: $main;
+    background: $red;
     border-radius: 3px;
 
     .red-white-block__red-section__title {
@@ -31,7 +30,7 @@
 
   .red-white-block__white-section {
     .red-white-block__white-section__title {
-      color: $main;
+      color: $red;
       text-transform: uppercase;
       font-size: 2.9em;
       line-height: 1.7;
