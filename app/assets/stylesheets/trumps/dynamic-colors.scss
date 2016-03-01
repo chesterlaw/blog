@@ -1,4 +1,13 @@
+.content {
+  width: 50%;
+  float: left;
+  display: block;
+}
+
 .color-chooser {
+  width: 50%;
+  float: left;
+
   .color-chooser__chosen-color {
     transition: all 0.2s ease-in;
   }
