@@ -18,7 +18,7 @@
 
   .paragraph {
     width: 98%;
-    margin: 0 auto;
+    margin: 1rem auto;
     padding: 1rem;
     position: relative;
   }
@@ -36,7 +36,28 @@
     left: 0;
   }
 
-  .custom-color, .custom-background {
+  .paragraph__corner-border--top-right {
+    border-top: $border-width solid black;
+    border-right: $border-width solid black;
+    top: 0;
+    right: 0;
+  }
+
+  .paragraph__corner-border--bottom-left {
+    border-bottom: $border-width solid black;
+    border-left: $border-width solid black;
+    bottom: 0;
+    left: 0;
+  }
+
+  .paragraph__corner-border--bottom-right {
+    border-bottom: $border-width solid black;
+    border-right: $border-width solid black;
+    bottom: 0;
+    right: 0;
+  }
+
+  .custom-color, .custom-background, .custom-border-color {
     transition: all 0.2s ease-in;
   }
 

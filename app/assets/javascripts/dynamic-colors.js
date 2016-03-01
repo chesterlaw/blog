@@ -7,6 +7,7 @@ $(document).ready(function() {
       var color = $(this).css('background-color');
       $('.custom-color').css('color', color);
       $('.custom-background').css('background-color', color);
+      $('.custom-border-color').css('border-color', color);
     });
   };
 });
