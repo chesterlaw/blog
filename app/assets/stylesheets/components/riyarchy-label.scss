@@ -17,6 +17,17 @@
       display: inline-block;
       padding-top: 0.2rem;
 
+      &:hover {
+        img {
+          -webkit-filter: invert(1);
+          filter: invert(1);
+        }
+
+        a {
+          color: white;
+        }
+      }
+
       img {
         width: 1.8rem;
         float: left;
