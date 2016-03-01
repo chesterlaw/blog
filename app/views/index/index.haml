@@ -1,4 +1,4 @@
-- @body_classes = :experiments
+- @body_classes = :index
 
 .centered-block
   = render 'components/chinese_title'
@@ -8,3 +8,5 @@
   = render 'components/red_white_block'
 .centered-block
   = render 'components/riyarchy_label'
+  = link_to 'http://www.audiomon.com' do
+    = image_tag 'audiomon.png', class: 'audiomon-logo'

@@ -1,49 +1,26 @@
 .index {
-  $space-between-elements: 4.5rem;
-  $chinese-title-width: 180px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  width: 97%;
-  max-width: 1000px;
-  margin: 0 auto;
-  overflow: hidden;
-  padding-top: $space-between-elements;
-  display: flex;
-
-  .index__chinese-title {
-    width: $chinese-title-width;
-
-    h1 {
-      color: black;
-      line-height: 1.05;
-      font-size: 9rem;
-      text-align: center;
-      font-family: "Hiragino Sans GB", "STHeiti", sans-serif;
-      font-weight: 800;
-      @media only screen and (max-width: 1000px) {
-        font-size: 14vw;
-      }
-
-      &:last-child {
-        position: relative;
-        bottom: 0.62em;
-        left: 0.7em;
-      }
-    }
+  .centered-block {
+    margin: 0 auto;
+    width: 1000px;
+    position: relative;
+    padding-right: 18.5rem;
   }
 
-  .index__content {
-    padding-left: $space-between-elements/2;
-    font-size: 2rem;
-    font-weight: 800;
-
-    ul {
-      list-style-type: circle;
-    }
+  .chinese-title {
+    position: absolute;
+    right: 0;
+    z-index: 2;
   }
 
-  .index__english-title {
-    font-size: 4rem;
-    font-weight: 800;
-    line-height: 1;
+  .mewtwo {
+    opacity: 0.55;
+    margin-top: 1rem;
+    transform: rotate(-4deg) scale(1.2);
+    position: absolute;
+  }
+
+  .audiomon-logo {
+    width: 100%;
+    padding: 1.5rem 0;
   }
 }
