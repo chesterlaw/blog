@@ -7,6 +7,10 @@
     text-align: center;
     font-size: 2rem;
     font-weight: 800;
+    border-left: $border-width solid black;
+    border-right: $border-width solid black;
+    width: 98%;
+    margin: 0.5rem auto 0;
   }
 
   .text-block {
@@ -20,8 +24,12 @@
   .paragraph {
     width: 98%;
     margin: 1rem auto;
-    padding: 1rem;
     position: relative;
+    text-indent: 1rem;
+  }
+
+  .paragraph__content {
+    padding: 1.5rem;
   }
 
   .paragraph__corner-border {
@@ -78,6 +86,7 @@
   .color-chooser {
     width: 50%;
     float: left;
+    height: 100%;
 
     .color-chooser__color-choice {
       width: 100px;
