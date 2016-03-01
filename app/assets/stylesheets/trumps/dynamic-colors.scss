@@ -1,8 +1,11 @@
 .color-chooser {
+  .color-chooser__chosen-color {
+    transition: all 0.2s ease-in;
+  }
+
   .color-chooser__color-choice {
     width: 100px;
     height: 100px;
-    background: white;
   }
 
   .color-chooser__color-choice--red {
