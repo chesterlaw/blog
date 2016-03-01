@@ -5,8 +5,8 @@ $(document).ready(function() {
   function main() {
     $('.color-chooser__color-choice').on('click', function() {
       var color = $(this).css('background-color');
-      $('.content .custom-color').css('color', color);
-      $('.content .custom-background').css('background-color', color);
+      $('.custom-color').css('color', color);
+      $('.custom-background').css('background-color', color);
     });
   };
 });
