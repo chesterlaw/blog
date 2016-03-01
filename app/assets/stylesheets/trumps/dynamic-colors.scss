@@ -1,19 +1,19 @@
-.dynamic-colors {
-  .color-choice {
+.color-chooser {
+  .color-chooser__color-choice {
     width: 100px;
     height: 100px;
     background: white;
   }
 
-  .color-choice--red {
+  .color-chooser__color-choice--red {
     background: red;
   }
 
-  .color-choice--green {
+  .color-chooser__color-choice--green {
     background: green;
   }
 
-  .color-choice--blue {
+  .color-chooser__color-choice--blue {
     background: blue;
   }
 }
