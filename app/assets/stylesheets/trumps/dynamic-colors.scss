@@ -1,7 +1,19 @@
-.content {
-  width: 50%;
-  float: left;
-  display: block;
+.dynamic-colors {
+  height: 100%;
+
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  .text-block {
+    text-align: center;
+    width: 98%;
+    margin: 0 auto;
+    border-radius: 3px;
+  }
+
 
   .custom-color, .custom-background {
     transition: all 0.2s ease-in;
@@ -11,28 +23,37 @@
     color: white;
     background: #111;
   }
-}
 
-.color-chooser {
-  width: 50%;
-  float: left;
-
-  .color-chooser__color-choice {
-    width: 100px;
-    height: 100px;
-    display: inline-block;
+  .content {
+    width: 50%;
     float: left;
+    display: block;
+    background: #eee;
+    height: 100%;
+    border-right: 1px solid black;
   }
 
-  .color-chooser__color-choice--red {
-    background: red;
-  }
+  .color-chooser {
+    width: 50%;
+    float: left;
 
-  .color-chooser__color-choice--green {
-    background: green;
-  }
+    .color-chooser__color-choice {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      float: left;
+    }
 
-  .color-chooser__color-choice--blue {
-    background: blue;
+    .color-chooser__color-choice--red {
+      background: red;
+    }
+
+    .color-chooser__color-choice--green {
+      background: green;
+    }
+
+    .color-chooser__color-choice--blue {
+      background: blue;
+    }
   }
 }
