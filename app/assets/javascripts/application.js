@@ -4,3 +4,5 @@
 //= require template.js.coffee
 
 // require turbolinks
+
+//= require dynamic-colors.js

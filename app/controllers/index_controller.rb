@@ -8,6 +8,9 @@ class IndexController < ApplicationController
     get_mewtwo
   end
 
+  def dynamic_colors
+  end
+
   private
     def get_chinese_title
       month = Time.now.strftime("%m")
