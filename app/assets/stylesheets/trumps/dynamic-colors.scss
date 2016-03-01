@@ -1,5 +1,7 @@
 .dynamic-colors {
   height: 100%;
+  $border-width: 5px;
+  $border-length: 20px;
 
   .title {
     text-align: center;
@@ -14,6 +16,25 @@
     border-radius: 3px;
   }
 
+  .paragraph {
+    width: 98%;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative;
+  }
+
+  .paragraph__corner-border {
+    width: $border-length;
+    height: $border-length;
+    position: absolute;
+  }
+
+  .paragraph__corner-border--top-left {
+    border-top: $border-width solid black;
+    border-left: $border-width solid black;
+    top: 0;
+    left: 0;
+  }
 
   .custom-color, .custom-background {
     transition: all 0.2s ease-in;
