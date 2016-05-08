@@ -22,19 +22,19 @@
         float: left;
         opacity: 0.85;
       }
-
-      a {
-        margin-left: 0.5rem;
-        display: inline-block;
-        font-size: 2rem;
-        line-height: 1;
-        color: black;
-        float: left;
-        text-transform: uppercase;
-        font-family: "Avenir-Medium", "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        text-shadow: 0 0 0.1px black;
-      }
     }
+  }
+
+  .riyarchy-label__header-section__header__title {
+    margin-left: 0.5rem;
+    display: inline-block;
+    font-size: 2rem;
+    line-height: 1;
+    color: black;
+    float: left;
+    text-transform: uppercase;
+    font-family: "Avenir-Medium", "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-shadow: 0 0 0.1px black;
   }
 
   .riyarchy-label__level {
