@@ -1,0 +1,41 @@
+.social-networks {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background: #999;
+  overflow: auto;
+}
+
+
+.social-networks__prompt {
+  padding: 0.5rem 1rem;
+  background: white;
+  border: 1px solid black;
+  font-family: monaco;
+  width: 65%;
+  float: left;
+  line-height: 2rem;
+}
+
+.social-networks__choices {
+  background: white;
+  border: 1px solid black;
+  width: 35%;
+  float: left;
+}
+
+.social-networks__network {
+  display: block;
+  font-family: monaco;
+
+  &:before {
+    content: '▸';
+    padding-right: 0.5rem;
+    opacity: 0;
+  }
+
+  &:hover {
+    &:before {
+      opacity: 1;
+    }
+  }
+}
