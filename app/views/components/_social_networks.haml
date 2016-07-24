@@ -1,7 +1,9 @@
 .social-networks
   .social-networks__prompt Which social network would you like to connect with me on?
   .social-networks__choices
-    = link_to 'Facebook', 'https://facebook.com/chesterlaw', target: '_blank', class: 'social-networks__network'
-    = link_to 'Twitter', 'https://twitter.com/chesterlaww', target: '_blank', class: 'social-networks__network'
-    = link_to 'Instagram', 'https://instagram.com/chesterlaw', target: '_blank', class: 'social-networks__network'
-    = link_to 'Pinterest', 'https://pinterest.com/chesterlaw', target: '_blank', class: 'social-networks__network'
+    .social-networks__choices__column
+      = link_to 'Facebook', 'https://facebook.com/chesterlaw', target: '_blank', class: 'social-networks__choices__choice'
+      = link_to 'Twitter', 'https://twitter.com/chesterlaww', target: '_blank', class: 'social-networks__choices__choice'
+    .social-networks__choices__column
+      = link_to 'Instagram', 'https://instagram.com/chesterlaw', target: '_blank', class: 'social-networks__choices__choice'
+      = link_to 'Pinterest', 'https://pinterest.com/chesterlaw', target: '_blank', class: 'social-networks__choices__choice'
