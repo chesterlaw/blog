@@ -1,8 +1,13 @@
 .merge-title
   .merge-title__title Chester Law
   .merge-title__content
-    %p This is Chester Law's Website.
+    - if !mobile
+      %p This is Chester Law's Website.
+      %p I find this whole responsive web design trend very aggravating. On the one hand, the world is moving towards mobile, and I want my site to be accessible on smaller devices. On the other hand, I hate not being able to paint on the large canvas called the desktop browser.
 
-    %br
-
-    %p I don't buy this whole responsive craze. Sometimes I want to be able to paint on a large canvas, the size of a desktop browser, not the size of a smartphone. Traditional artists don't have to paint on tiny canvases, and I shouldn't have to either.
+    - if mobile
+      .merge-title__social-title Connect with me:
+      = link_to :Facebook, 'https://facebook.com/chesterlaw', target: '_blank', class: 'merge-title__social-link'
+      = link_to :Twitter, 'https://twitter.com/chesterlaww', target: '_blank', class: 'merge-title__social-link'
+      = link_to :Instagram, 'https://instagram.com/chesterlaw', target: '_blank', class: 'merge-title__social-link'
+      = link_to :Pinterest, 'https://pinterest.com/chesterlaw', target: '_blank', class: 'merge-title__social-link'
