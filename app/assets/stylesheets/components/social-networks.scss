@@ -1,5 +1,6 @@
-$social-networks__height: 100px;
+$social-networks__height: 110px;
 $social-networks__monaco-font-family: Monaco, Consolas, "Lucida Console", monospace;
+$social-networks__row-count: 3;
 
 .social-networks {
   margin: 1rem 0;
@@ -38,8 +39,8 @@ $social-networks__monaco-font-family: Monaco, Consolas, "Lucida Console", monosp
 .social-networks__choices__choice {
   display: block;
   font-family: $social-networks__monaco-font-family;
-  height: 0.5*$social-networks__height;
-  margin-bottom: -0.7rem;
+  height: 1/$social-networks__row-count*$social-networks__height;
+  margin-top: -0.3rem;
 
   &:before {
     content: '▸';
