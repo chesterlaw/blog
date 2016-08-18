@@ -1,88 +1,89 @@
+$riyarchy-label__red: #BB0000;
+$riyarchy-label__border-width: 2px;
+$riyarchy-label__border-radius: 2px;
+
 .riyarchy-label {
-  $red: #BB0000;
-  $border-width: 2px;
-  $border-radius: 2px;
   width: 350px;
-  border-radius: $border-radius;
+  border-radius: $riyarchy-label__border-radius;
   overflow: hidden;
-  border: $border-width+2 solid $red;
-  box-shadow: 0 0 1px $red, 0 0 1px $red;
+  border: $riyarchy-label__border-width+2 solid $riyarchy-label__red;
+  box-shadow: 0 0 1px $riyarchy-label__red, 0 0 1px $riyarchy-label__red;
   margin: 0 auto 1.5rem;
+}
 
-  .riyarchy-label__header-section {
-    text-align: center;
-    background: $red;
+.riyarchy-label__header-section {
+  text-align: center;
+  background: $riyarchy-label__red;
+}
 
-    .riyarchy-label__header-section__header {
-      display: inline-block;
-      padding-top: 0.2rem;
+.riyarchy-label__header-section__header {
+  display: inline-block;
+  padding-top: 0.2rem;
 
-      img {
-        width: 1.8rem;
-        float: left;
-        opacity: 0.85;
-      }
-    }
-  }
-
-  .riyarchy-label__header-section__header__title {
-    margin-left: 0.5rem;
-    display: inline-block;
-    font-size: 2rem;
-    line-height: 1;
-    color: black;
+  img {
+    width: 1.8rem;
     float: left;
-    text-transform: uppercase;
-    font-family: "Avenir-Medium", "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-shadow: 0 0 0.1px black;
+    opacity: 0.85;
+  }
+}
+
+.riyarchy-label__header-section__header__title {
+  margin-left: 0.5rem;
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 1;
+  color: black;
+  float: left;
+  text-transform: uppercase;
+  font-family: "Avenir-Medium", "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: 0 0 0.1px black;
+}
+
+.riyarchy-label__level {
+  border-bottom: $riyarchy-label__border-width solid $riyarchy-label__red;
+  overflow: hidden;
+  color: $riyarchy-label__red;
+  text-align: center;
+  display: flex;
+  align-items: stretch;
+
+  &:last-child {
+    border-bottom: 0;
   }
 
-  .riyarchy-label__level {
-    border-bottom: $border-width solid $red;
-    overflow: hidden;
-    color: $red;
-    text-align: center;
+  p {
+    font-size: 0.6rem;
+    text-shadow: 0 0 0.3px $riyarchy-label__red;
+  }
+
+  .section-wrapper {
+    float: left;
+    background: black;
     display: flex;
     align-items: stretch;
 
-    &:last-child {
-      border-bottom: 0;
+    &:first-child { border-right: $riyarchy-label__border-width solid $riyarchy-label__red;}
+
+    &.percent-50 {
+      text-align: left;
     }
 
-    p {
-      font-size: 0.6rem;
-      text-shadow: 0 0 0.3px $red;
+    &.percent-25 {
+      text-align: left;
     }
 
-    .section-wrapper {
-      float: left;
-      background: black;
-      display: flex;
-      align-items: stretch;
-
-      &:first-child { border-right: $border-width solid $red;}
-
-      &.percent-50 {
-        text-align: left;
-      }
-
-      &.percent-25 {
-        text-align: left;
-      }
-
-      &.percent-100 {
-        width: 100%;
-
-        .section {
-          width: 100%;
-        }
-      }
+    &.percent-100 {
+      width: 100%;
 
       .section {
-        padding: 0.5rem;
-        border-radius: $border-radius;
-        box-shadow: 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red, 0 0 2px $red;
+        width: 100%;
       }
+    }
+
+    .section {
+      padding: 0.5rem;
+      border-radius: $riyarchy-label__border-radius;
+      box-shadow: 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red, 0 0 2px $riyarchy-label__red;
     }
   }
 }

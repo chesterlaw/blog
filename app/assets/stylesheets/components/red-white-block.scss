@@ -3,25 +3,25 @@
   border-radius: 3px;
   padding: 1rem;
   margin: 1rem 0;
+}
 
-  .red-white-block__link {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: white;
-    font-size: 2rem;
-    $border-thickness: 0.6rem;
-    border-left: $border-thickness solid white;
-    border-right: $border-thickness solid white;
+.red-white-block__link {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2rem;
+  $border-thickness: 0.6rem;
+  border-left: $border-thickness solid white;
+  border-right: $border-thickness solid white;
 
-    &:hover {
-      background: rgba(0, 0, 0, 0.7);
-    }
+  &:hover {
+    background: rgba(0, 0, 0, 0.7);
   }
+}
 
-  .red-white-block__list {
-    padding: 1em 1.65em;
-  }
+.red-white-block__list {
+  padding: 1em 1.65em;
 }
