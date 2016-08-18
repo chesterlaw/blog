@@ -2,8 +2,11 @@
   .merge-title__title Chester Law
   .merge-title__content
     - if !mobile
-      %p This is Chester Law's Website.
-      %p I find this whole responsive web design trend very aggravating. On the one hand, the world is moving towards mobile, and I want my site to be accessible on smaller devices. On the other hand, I hate not being able to paint on the large canvas called the desktop browser.
+      %p Welcome to my website!
+      %p
+        I'm Chester Law. You can reach me at
+        %a{href: 'mailto:chesterlaw@me.com', class: 'merge-title__content__email'} chesterlaw@me.com
+        %span> .
 
     - if mobile
       .merge-title__social-title Connect with me:
