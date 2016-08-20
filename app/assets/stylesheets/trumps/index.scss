@@ -1,4 +1,8 @@
 .index__desktop {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+
   .centered-block {
     margin: 0 auto;
     width: 1000px;
