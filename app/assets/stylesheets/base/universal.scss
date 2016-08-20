@@ -1,9 +1,10 @@
 $shinji-blue: #1161d7;
 $red: #D80000;
+$default-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 html { height: 100%; }
 
-*, input { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+*, input { font-family: $default-font-family;}
 
 body, .border-box, div, form, p, a, footer, input, textarea, label, img {
   -moz-box-sizing: border-box;
