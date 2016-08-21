@@ -1,9 +1,35 @@
 .character-design {
   margin-bottom: 1rem;
-  border: 1px solid black;
-  background: white;
-  border-radius: 5px;
+  background: black;
   overflow: hidden;
+  padding: 0.8rem;
+}
+
+.character-design__title {
+  color: white;
+  font-family: "Avenir", $default-font-family;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border-top: 1px solid white;
+  padding: 0.25rem 0;
+}
+
+.character-design__english-name {
+  background: white;
+  font-family: "Avenir", $default-font-family;
+  font-weight: 800;
+  padding-left: 0.4rem;
+  padding-top: 0.4rem;
+  font-size: 1.1rem;
+}
+
+.character-design__chinese-name {
+  background: white;
+  font-family: "Hiragino Maru Gothic ProN", "Avenir", $default-font-family;
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding-left: 0.4rem;
+  line-height: 1rem;
 }
 
 .character-design__drawings {
@@ -11,7 +37,7 @@
   overflow: auto;
   margin: 0 auto;
   display: block;
-  padding: 1.2rem 1rem;
+  padding: 0 1rem 1rem;
 }
 
 .character-design__drawing {
