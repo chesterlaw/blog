@@ -5,6 +5,9 @@
     .character-design__name__chinese 羅彦章
 
   .character-design__drawings
-    = image_tag 'face-side.png', class: 'character-design__drawing character-design__drawing--side'
-    = image_tag 'face-angle.png', class: 'character-design__drawing character-design__drawing--angle'
-    = image_tag 'face-front.png', class: 'character-design__drawing character-design__drawing--front'
+    = link_to 'http://chesterlaw.deviantart.com/art/Self-Character-Design-Face-Side-630240184', target: :_blank do
+      = image_tag 'face-side.png', class: 'character-design__drawing character-design__drawing--side'
+    = link_to 'http://chesterlaw.deviantart.com/art/Self-Character-Design-Face-Angle-630240104', target: :_blank do
+      = image_tag 'face-angle.png', class: 'character-design__drawing character-design__drawing--angle'
+    = link_to 'http://chesterlaw.deviantart.com/art/Self-Character-Design-Face-Front-630239748', target: :_blank do
+      = image_tag 'face-front.png', class: 'character-design__drawing character-design__drawing--front'
