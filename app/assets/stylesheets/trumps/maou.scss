@@ -6,24 +6,36 @@ $maou__blue: #018fcc;
 $maou__yellow: #fff600;
 
 .maou {
-  height: 100%;
-}
-
-.maou__lines {
-  width: 100%;
+  max-width: 100%;
   overflow: hidden;
-  position: absolute;
-  height: 100%;
-  z-index: -1;
+  position: relative;
 }
 
-.maou__lines__line {
+.maou__line {
   border-style: solid;
-  border-width: 252px 2523px 0 0;
-  border-color: $maou__blue transparent transparent transparent;
   position: absolute;
-  transform: rotateX(100deg);
   z-index: -1;
+  border-color: $maou__blue transparent transparent transparent;
+}
+
+.maou__line--1 {
+  transform: rotateZ(-20deg) translate(-200px, 200px);
+  border-width: 100px 2523px 0 0;
+}
+
+.maou__line--2 {
+  transform: rotateZ(-40deg) translate(-1000px, 200px);
+  border-width: 100px 2523px 0 0;
+}
+
+.maou__line--3 {
+  transform: rotateZ(-20deg) translate(-400px, 800px);
+  border-width: 150px 2523px 0 0;
+}
+
+.maou__line--4 {
+  transform: rotateZ(-100deg) translate(-200px, -400px);
+  border-width: 100px 2523px 0 0;
 }
 
 .maou__title {
@@ -54,25 +66,36 @@ $maou__yellow: #fff600;
 .maou__content {
   max-width: 850px;
   width: 98%;
-  margin: 1rem auto;
+  margin: 1rem auto 5rem;
   padding: 1.5rem;
-  border: 2px solid $maou__purple;
+  border: 3px solid $maou__purple;
   border-radius: 5px;
   overflow: hidden;
   background: white;
 }
 
+
 .maou__content__text {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  text-indent: 2rem;
+}
+
+.maou__content__text--spoiler-warning {
+  color: #F50000;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  text-indent: 0;
 }
 
 .maou__content__episode-number {
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 800;
   text-transform: uppercase;
   margin-top: 2rem;
-  color: $maou__blue
+  color: $maou__blue;
+  -webkit-text-stroke: 1px black;
 }
 
 .maou__content__shots {
