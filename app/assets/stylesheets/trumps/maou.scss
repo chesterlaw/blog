@@ -1,0 +1,27 @@
+.maou {
+
+}
+
+.maou__content {
+  max-width: 1000px;
+  width: 98%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #666;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.maou__content__episode-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.maou__content__shot {
+  width: 50%;
+  display: inline-block;
+  float: left;
+  padding: 1rem;
+}
