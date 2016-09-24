@@ -2,12 +2,28 @@ $maou__turquoise: #00ada9;
 $maou__pink: #ff06a2;
 $maou__orange: #ffb12c;
 $maou__purple: #cf4eff;
-$maou__blue: #006fff;
+$maou__blue: #018fcc;
 $maou__yellow: #fff600;
 
 .maou {
-  position: relative;
+  height: 100%;
+}
+
+.maou__lines {
+  width: 100%;
   overflow: hidden;
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+}
+
+.maou__lines__line {
+  border-style: solid;
+  border-width: 252px 2523px 0 0;
+  border-color: $maou__blue transparent transparent transparent;
+  position: absolute;
+  transform: rotateX(100deg);
+  z-index: -1;
 }
 
 .maou__title {
@@ -35,22 +51,12 @@ $maou__yellow: #fff600;
   padding-left: 1rem;
 }
 
-.maou__line {
-  border-style: solid;
-  border-width: 252px 2523px 0 0;
-  border-color: #007bff transparent transparent transparent;
-  position: absolute;
-  transform: rotateX(100deg);
-  overflow: hidden;
-  z-index: -1;
-}
-
 .maou__content {
   max-width: 850px;
   width: 98%;
   margin: 1rem auto;
   padding: 1.5rem;
-  border: 1px solid $maou__purple;
+  border: 2px solid $maou__purple;
   border-radius: 5px;
   overflow: hidden;
   background: white;
@@ -59,14 +65,18 @@ $maou__yellow: #fff600;
 .maou__content__text {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: $maou__orange;
 }
 
 .maou__content__episode-number {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 2rem;
+  color: $maou__blue
+}
+
+.maou__content__shots {
+  overflow: hidden;
 }
 
 .maou__content__shot {
