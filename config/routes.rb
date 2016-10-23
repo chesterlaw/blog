@@ -4,6 +4,7 @@ MyBlog::Application.routes.draw do
   scope :w do
     get '', to: "index#index", as: :index
     get "a-fighters", to: "index#a_fighters", as: "a_fighters"
+    get "maou", to: "index#maou", as: "maou"
   end
 
 end
