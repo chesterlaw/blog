@@ -1,0 +1,11 @@
+.project-list
+  .project-list__title My Works / 作品
+  .project-list__content
+    .project-list__work
+      = link_to 'http://www.audiomon.com', target: '_blank', class: 'project-list__work__link' do
+        = image_tag 'audiomon.png', class: 'project-list__work__link__image'
+      .project-list__work__description Google Docs for GarageBand. Music collaboration on the web.
+    .project-list__work
+      = link_to 'http://chester.la/w/erder', target: '_blank', class: 'project-list__work__link' do
+        = image_tag 'erder.png', class: 'project-list__work__link__image'
+      .project-list__work__description A geometric, unarbitrary, and therefore grid-based typeface.

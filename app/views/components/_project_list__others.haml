@@ -1,0 +1,14 @@
+.project-list.project-list--other-links
+  .project-list__title Others / 其他
+  .project-list__content
+    .project-list__work
+      = link_to 'http://chester.la/w/possessions', target: '_blank', class: 'project-list__work__link' do
+        %p.project-list__work__link__image--possessions Possessions
+      .project-list__work__description A list of my minimalist possessions.
+
+    .project-list__work
+      = link_to maou_path, target: '_blank', class: 'project-list__work__link' do
+        = image_tag 'maou-the-real.png', class: 'project-list__work__link__image project-list__work__link__image--maou'
+      .project-list__work__description Anime pilgrimage photos for "Hataraku Maou-sama!"
+
+
