@@ -1,0 +1,43 @@
+.shirobako__wrapper {
+  width: 98.5%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.shirobako__title {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 800px;
+
+  img {
+    float: left;
+    width: 50%;
+  }
+}
+
+.shirobako__spoiler-warning {
+  color: #F50000;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 1.2rem;
+  font-size: 1.3rem;
+}
+
+.shirobako__content__shots {
+  overflow: hidden;
+}
+
+.shirobako__content__shot {
+  width: 50%;
+  float: left;
+  display: inline-block;
+}
+
+.shirobako__content__shot--anime {
+  padding-right: 0.5rem;
+}
+
+.shirobako__content__shot--real {
+  padding-left: 0.5rem;
+}
