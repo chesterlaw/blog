@@ -1,3 +1,11 @@
+$shirobako__picture-gap: 1rem;
+$shirobako__yellow: #dd9811;
+$shirobako__pink: #dd3188;
+$shirobako__purple: #6b437c;
+$shirobako__blue: #4076ab;
+$shirobako__green: #90b643;
+$shirobako__orange: #ed3111;
+
 .shirobako__wrapper {
   width: 98.5%;
   max-width: 1800px;
@@ -6,7 +14,7 @@
 
 .shirobako__title {
   overflow: hidden;
-  margin: 0 auto;
+  margin: 1.5rem auto 0;
   max-width: 800px;
 
   img {
@@ -24,20 +32,78 @@
   font-size: 1.3rem;
 }
 
+.shirobako__content__episode-number {
+  font-size: 2.3rem;
+  color: $shirobako__orange;
+  font-weight: 800;
+  margin-top: 2rem;
+}
+
+.shirobako__content__episode-summary {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
 .shirobako__content__shots {
   overflow: hidden;
 }
 
-.shirobako__content__shot {
+.shirobako__content__shots__link {
   width: 50%;
   float: left;
-  display: inline-block;
 }
 
-.shirobako__content__shot--anime {
-  padding-right: 0.5rem;
+.shirobako__content__shots__link--anime {
+  padding-right: $shirobako__picture-gap/2;
 }
 
-.shirobako__content__shot--real {
-  padding-left: 0.5rem;
+.shirobako__content__shots__link--real {
+  padding-left: $shirobako__picture-gap/2;
+}
+
+.shirobako__content__shot {
+  float: left;
+  width: 100%;
+}
+
+.shirobako__content__shot {
+  border: 8px solid;
+}
+
+.shirobako__content__shots:nth-of-type(3n-1) {
+  .shirobako__content__shot--anime {
+    border-color: $shirobako__yellow;
+  }
+  .shirobako__content__shot--real {
+    border-color: $shirobako__pink;
+  }
+}
+
+.shirobako__content__shots:nth-of-type(3n) {
+  .shirobako__content__shot--anime {
+    border-color: $shirobako__purple;
+  }
+  .shirobako__content__shot--real {
+    border-color: $shirobako__blue;
+  }
+}
+
+.shirobako__content__shots:nth-of-type(3n+1) {
+  .shirobako__content__shot--anime {
+    border-color: $shirobako__green;
+  }
+  .shirobako__content__shot--real {
+    border-color: $shirobako__orange;
+  }
+}
+
+span:nth-of-type(3n) {
+  border: 3px solid red;
+  overflow: hidden;
+}
+
+.shirobako__content__shots__caption {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  float: left;
 }
