@@ -45,29 +45,45 @@ $shirobako__semicircle-visible-ratio: 0.15;
 
 .shirobako__content__character {
   position: absolute;
+}
 
-  @media only screen and (max-width: 1045px) {
-    display: none;
-  }
+.shirobako__content__character--diesel {
+  height: 220px;
+  top: -180px;
+  left: 10px;
+  @media only screen and (max-width: 1100px) { display: none }
+}
+
+.shirobako__content__character--ema {
+  height: 260px;
+  top: -185px;
+  left: 240px;
+  @media only screen and (max-width: 1340px) { display: none }
 }
 
 .shirobako__content__character--aoi {
   height: 300px;
   top: -190px;
-  left: 100px;
+  left: 380px;
+  @media only screen and (max-width: 1650px) { display: none }
 }
 
-.shirobako__content__character--ema {
-  top: -193px;
+.shirobako__content__character--shizuka {
+  height: 316px;
+  top: -208px;
+  right: 340px;
+  @media only screen and (max-width: 1510px) { display: none }
+}
+
+.shirobako__content__character--mii {
+  height: 210px;
+  top: -195px;
   right: 100px;
-}
-
-.shirobako__content__character--aoi {
-
+  @media only screen and (max-width: 1250px) { display: none }
 }
 
 .shirobako__content__episode-section-wrapper {
-  background: $shirobako__light-blue;
+  background: lighten($shirobako__light-blue, 35%);
   margin-top: $shirobako__semicircle-diameter*$shirobako__semicircle-visible-ratio + 30px;
   margin-bottom: 12rem;
 }
@@ -80,7 +96,7 @@ $shirobako__semicircle-visible-ratio: 0.15;
 }
 
 .shirobako__content__episode-section__semicircle {
-  background: $shirobako__light-blue;
+  background: lighten($shirobako__light-blue, 35%);
   width: $shirobako__semicircle-diameter;
   height: $shirobako__semicircle-diameter;
   border-radius: 50%;
@@ -98,16 +114,14 @@ $shirobako__semicircle-visible-ratio: 0.15;
 }
 
 .shirobako__content__episode-intro__number {
-  font-size: 2.8rem;
-  color: white;
-  font-weight: 800;
+  font-size: 2.2rem;
+  font-weight: 500;
   text-align: center;
 }
 
 .shirobako__content__episode-intro__summary {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   padding-bottom: 1rem;
-  color: white;
   text-align: center;
   max-width: $shirobako__semicircle-diameter;
   margin: 0 auto;
@@ -171,8 +185,10 @@ span:nth-of-type(3n) {
 
 .shirobako__content__shots__caption {
   font-size: 1.1rem;
-  float: left;
-  margin-top: 0.8rem;
+  margin: 0 auto;
+  margin-top: 1rem;
   margin-bottom: 2rem;
-  color: white;
+  float: left;
+  width: 100%;
+  text-align: center;
 }
