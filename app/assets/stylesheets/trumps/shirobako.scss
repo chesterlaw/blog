@@ -14,14 +14,12 @@ $shirobako__semicircle-visible-ratio: 0.15;
   border-bottom: 150px solid $shirobako__yellow;
 }
 
-.shirobako__wrapper {
-}
-
 .shirobako__title {
   overflow: hidden;
   margin: 0 auto;
   padding-top: 1.5rem;
   max-width: 800px;
+  width: 95%;
 
   img {
     float: left;
@@ -37,13 +35,35 @@ $shirobako__semicircle-visible-ratio: 0.15;
   }
 }
 
-.shirobako__spoiler-warning {
-  color: #F50000;
-  font-weight: 500;
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 1.2rem;
-  font-size: 1.7rem;
+.shirobako__content {
+  position: relative;
+
+  @media only screen and (max-width: 740px) {
+    overflow: hidden;
+  }
+}
+
+.shirobako__content__character {
+  position: absolute;
+
+  @media only screen and (max-width: 1045px) {
+    display: none;
+  }
+}
+
+.shirobako__content__character--aoi {
+  height: 300px;
+  top: -190px;
+  left: 100px;
+}
+
+.shirobako__content__character--ema {
+  top: -193px;
+  right: 100px;
+}
+
+.shirobako__content__character--aoi {
+
 }
 
 .shirobako__content__episode-section-wrapper {
@@ -53,7 +73,7 @@ $shirobako__semicircle-visible-ratio: 0.15;
 }
 
 .shirobako__content__episode-section {
-  width: 98.5%;
+  width: 95%;
   max-width: 1800px;
   margin: 0 auto;
   position: relative;
@@ -82,7 +102,6 @@ $shirobako__semicircle-visible-ratio: 0.15;
   color: white;
   font-weight: 800;
   text-align: center;
-  -webkit-text-stroke: 1px black;
 }
 
 .shirobako__content__episode-intro__summary {
@@ -90,7 +109,7 @@ $shirobako__semicircle-visible-ratio: 0.15;
   padding-bottom: 1rem;
   color: white;
   text-align: center;
-  width: $shirobako__semicircle-diameter;
+  max-width: $shirobako__semicircle-diameter;
   margin: 0 auto;
 }
 
