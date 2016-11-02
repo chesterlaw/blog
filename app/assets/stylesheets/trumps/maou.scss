@@ -51,10 +51,21 @@ $maou__yellow: #fff600;
   left: 1.5rem;
   font-size: 1.4rem;
   font-weight: 800;
+  @media only screen and (max-width: 850px) {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    left: 0;
+  }
 }
 
 .maou__title__image {
   width: 60%;
+  @media only screen and (max-width: 605px) {
+    width: 100%;
+  }
 }
 
 .maou__title__the-real {
@@ -72,6 +83,24 @@ $maou__yellow: #fff600;
   position: relative;
   left: -0.5rem;
   top: 0.3rem;
+
+  @media only screen and (max-width: 905px) {
+    font-size: 4rem;
+  }
+  @media only screen and (max-width: 805px) {
+    font-size: 3.5rem;
+    top: 0.1rem;
+  }
+  @media only screen and (max-width: 705px) {
+    font-size: 3rem;
+    top: -0.5rem;
+  }
+  @media only screen and (max-width: 605px) {
+    width: 100%;
+    text-align: center;
+    font-size: 3.3rem;
+    top: -3.3rem;
+  }
 }
 
 .maou__content {
@@ -84,7 +113,6 @@ $maou__yellow: #fff600;
   overflow: hidden;
   background: white;
 }
-
 
 .maou__content__text {
   font-size: 1.2rem;
