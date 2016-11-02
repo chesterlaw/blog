@@ -39,6 +39,14 @@ $shirobako__semicircle-visible-ratio: 0.15;
   width: 95%;
   margin: 1.4rem auto 0;
   font-size: 1.2rem;
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    text-decoration: underline;
+  }
 }
 
 .shirobako__content {
@@ -196,15 +204,4 @@ span:nth-of-type(3n) {
   float: left;
   width: 100%;
   text-align: center;
-}
-
-.shirobako__content__final-words {
-  background: $shirobako__yellow;
-  padding: 3rem;
-  font-size: 1.2rem;
-  text-align: center;
-
-  a {
-    text-decoration: underline;
-  }
 }

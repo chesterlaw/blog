@@ -7,7 +7,9 @@
 
   .shirobako__intro
     %p Shirobako is my 5th favorite anime of all time, so when I went to Tokyo, I just had to go on a Shirobako pilgrimage and do some recreation shots! Check it out!
-
+    %p
+      To see my other anime pilgrimages,
+      = link_to 'go here!', index_path, target: :_blank
   .shirobako__content
     = image_tag 'diesel.png', class: 'shirobako__content__character shirobako__content__character--diesel'
     = image_tag 'ema.png', class: 'shirobako__content__character shirobako__content__character--ema'
@@ -129,11 +131,3 @@
           <a target='_blank' class='shirobako__content__shots__link shirobako__content__shots__link--real' href="https://www.flickr.com/photos/62072291@N04/30354460540/in/dateposted-public/">
           <span class='shirobako__content__shot-wrapper'><img class='shirobako__content__shot shirobako__content__shot--real' src="https://c5.staticflickr.com/6/5593/30354460540_86ffd52d7c_b.jpg"></span></a>
           .shirobako__content__shots__caption Diesel-san in front of the Musashi-Sakai subway station.
-
-
-    .shirobako__content__final-words
-      %p Disclaimer: I do not own Shirobako.
-      %p These pictures were taken in September 2016.
-      %p
-        See my other stuff, including other anime pilgrimages
-        = link_to 'here!', index_path, target: :_blank
