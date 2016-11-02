@@ -42,6 +42,15 @@ $maou__yellow: #fff600;
   max-width: 1000px;
   width: 98%;
   margin: 0 auto;
+  position: relative;
+}
+
+.maou__title__chester {
+  position: absolute;
+  top: 0.5rem;
+  left: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 800;
 }
 
 .maou__title__image {

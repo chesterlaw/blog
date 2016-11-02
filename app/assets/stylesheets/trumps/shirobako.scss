@@ -11,7 +11,6 @@ $shirobako__semicircle-visible-ratio: 0.15;
 
 .shirobako {
   border-top: 5px solid $shirobako__pink;
-  border-bottom: 150px solid $shirobako__yellow;
 }
 
 .shirobako__title {
@@ -92,7 +91,6 @@ $shirobako__semicircle-visible-ratio: 0.15;
 .shirobako__content__episode-section-wrapper {
   background: lighten($shirobako__light-blue, 35%);
   margin-top: $shirobako__semicircle-diameter*$shirobako__semicircle-visible-ratio + 30px;
-  margin-bottom: 12rem;
 }
 
 .shirobako__content__episode-section {
@@ -198,4 +196,15 @@ span:nth-of-type(3n) {
   float: left;
   width: 100%;
   text-align: center;
+}
+
+.shirobako__content__final-words {
+  background: $shirobako__yellow;
+  padding: 3rem;
+  font-size: 1.2rem;
+  text-align: center;
+
+  a {
+    text-decoration: underline;
+  }
 }
