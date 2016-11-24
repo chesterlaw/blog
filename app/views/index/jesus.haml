@@ -1,0 +1,12 @@
+- @body_classes = :jesus
+
+.jesus__title
+  = link_to :Jesus, jesus_path
+
+.jesus__content
+  = render 'components/jesus_nav'
+
+  - @this_chapter_images.each do |image|
+    = image_tag image, class: :jesus__image
+
+  = render 'components/jesus_nav'

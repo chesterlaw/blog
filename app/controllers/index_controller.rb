@@ -8,6 +8,25 @@ class IndexController < ApplicationController
     get_mewtwo
   end
 
+  def jesus
+    all_images = [
+      ['https://jesusmanga.files.wordpress.com/2016/07/1.png', 'https://jesusmanga.files.wordpress.com/2016/07/2.png', 'https://jesusmanga.files.wordpress.com/2016/07/3.png', 'https://jesusmanga.files.wordpress.com/2016/07/4.png', 'https://jesusmanga.files.wordpress.com/2016/07/5.png', 'https://jesusmanga.files.wordpress.com/2016/07/6.png', 'https://jesusmanga.files.wordpress.com/2016/07/7.png', 'https://jesusmanga.files.wordpress.com/2016/07/8.png', 'https://jesusmanga.files.wordpress.com/2016/07/9.png', 'https://jesusmanga.files.wordpress.com/2016/07/10.png', 'https://jesusmanga.files.wordpress.com/2016/07/11.png', 'https://jesusmanga.files.wordpress.com/2016/07/12.png', 'https://jesusmanga.files.wordpress.com/2016/07/13.png', 'https://jesusmanga.files.wordpress.com/2016/07/14.png', 'https://jesusmanga.files.wordpress.com/2016/07/151.png', 'https://jesusmanga.files.wordpress.com/2016/07/16.png'],
+      ['https://jesusmanga.files.wordpress.com/2016/07/17.png', 'https://jesusmanga.files.wordpress.com/2016/07/18.png', 'https://jesusmanga.files.wordpress.com/2016/07/19.png', 'https://jesusmanga.files.wordpress.com/2016/07/20.png', 'https://jesusmanga.files.wordpress.com/2016/07/21.png', 'https://jesusmanga.files.wordpress.com/2016/07/22.png', 'https://jesusmanga.files.wordpress.com/2016/07/231.png', 'https://jesusmanga.files.wordpress.com/2016/07/24.png', 'https://jesusmanga.files.wordpress.com/2016/07/251.png'],
+      ['https://jesusmanga.files.wordpress.com/2016/08/1.png', 'https://jesusmanga.files.wordpress.com/2016/08/2.png', 'https://jesusmanga.files.wordpress.com/2016/08/3.png', 'https://jesusmanga.files.wordpress.com/2016/08/4.png', 'https://jesusmanga.files.wordpress.com/2016/08/5.png', 'https://jesusmanga.files.wordpress.com/2016/08/6.png', 'https://jesusmanga.files.wordpress.com/2016/08/7.png', 'https://jesusmanga.files.wordpress.com/2016/08/8.png', 'https://jesusmanga.files.wordpress.com/2016/08/9.png', 'https://jesusmanga.files.wordpress.com/2016/08/10.png', 'https://jesusmanga.files.wordpress.com/2016/08/11.png', 'https://jesusmanga.files.wordpress.com/2016/08/12.png']
+    ]
+
+    @last_chapter = all_images.size
+    @current_chapter = [params[:chapter].to_i, 1].max
+    if @current_chapter > @last_chapter
+      redirect_to jesus_path(chapter: @last_chapter)
+    end
+    @is_at_last_chapter = @current_chapter == @last_chapter
+    @is_at_first_chapter = @current_chapter == 1
+    @this_chapter_images = all_images[@current_chapter - 1]
+    @next_chapter = @current_chapter + 1
+    @previous_chapter = @current_chapter - 1
+  end
+
   private
     def get_chinese_title
       month = Time.now.strftime("%m")

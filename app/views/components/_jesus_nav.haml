@@ -1,0 +1,7 @@
+.jesus__nav
+  %select{onChange: 'window.location.href=this.value', class: 'jesus__nav__select'}
+    - @last_chapter.times do |i|
+      %option{value: jesus_path(chapter: i + 1), selected: i+1 == @current_chapter}= "Chapter #{i+1}"
+
+  - if !@is_at_last_chapter
+    = link_to '➡', jesus_path(chapter: @next_chapter), class: 'jesus__nav__next-chapter'
