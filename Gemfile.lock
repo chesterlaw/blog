@@ -86,7 +86,7 @@ GEM
     minitest (5.8.4)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
-    puma (2.16.0)
+    puma (3.12.4)
     rack (1.6.4)
     rack-contrib (1.4.0)
       git-version-bump (~> 0.15)
